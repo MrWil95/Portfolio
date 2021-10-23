@@ -1,0 +1,49 @@
+.LandingContainer {
+  background-color: #3884DA;
+  margin: 2em;
+  height: 100vh;
+  font-size: clamp(.75em, 7.5vw, 1em);
+}
+
+.landingtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 3.125em;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 2em;
+}
+
+.fullstack {
+  /* position: relative; */
+  font-family: 'Raleway', sans-serif;
+  /* animation: slide 5s linear infinite; */
+}
+
+.graphics {
+  font-family: 'Rock Salt', cursive;
+}
+
+.travel {
+  font-family: 'Raleway', sans-serif;
+}
+
+.alex {
+  width: 50vw;
+  max-width: 15em;
+  min-width: 7.5em;
+  margin-top: 5.6em;
+  
+}
+
+@keyframes slide {
+  0%{bottom: 0;}
+  5%{bottom: 100px;}
+  33%{bottom: 100px;}
+  38%{bottom: 200px;}
+  66%{bottom: 200px;}
+  71%{bottom: 300px;}
+  100%{bottom: 300px;}
+}
