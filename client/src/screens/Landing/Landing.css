@@ -2,32 +2,37 @@
   background-color: #3884DA;
   margin: 2em;
   height: 100vh;
-  font-size: clamp(.75em, 7.5vw, 1em);
 }
 
-.landingtext {
+.slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  height: 3.125em;
+  height: 50px;
+}
+
+.landingtext {
+  height: 50px;
+  margin-bottom: 50px;
   text-align: center;
   overflow: hidden;
-  margin-top: 2em;
+  box-sizing: border-box;
 }
 
 .fullstack {
-  /* position: relative; */
   font-family: 'Raleway', sans-serif;
-  /* animation: slide 5s linear infinite; */
+  font-size: clamp(.75em, 7.5vw, 1em);
+  animation: slide 5s linear infinite;
 }
 
 .graphics {
   font-family: 'Rock Salt', cursive;
+  font-size: clamp(.5em, 7.5vw, .75em);
 }
 
 .travel {
   font-family: 'Raleway', sans-serif;
+  font-size: clamp(.75em, 7.5vw, 1em);
 }
 
 .alex {
@@ -35,15 +40,28 @@
   max-width: 15em;
   min-width: 7.5em;
   margin-top: 5.6em;
-  
 }
 
 @keyframes slide {
-  0%{bottom: 0;}
-  5%{bottom: 100px;}
-  33%{bottom: 100px;}
-  38%{bottom: 200px;}
-  66%{bottom: 200px;}
-  71%{bottom: 300px;}
-  100%{bottom: 300px;}
+  0% {
+    margin-top: -300px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  33% {
+    margin-top: -200px;
+  }
+  38% {
+    margin-top: -100px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
