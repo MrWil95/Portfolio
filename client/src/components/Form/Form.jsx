@@ -62,7 +62,7 @@ export default function Form() {
                className='info'
             />
             <br />
-            <button type='submit' className='send' disabled={!toSend}>Send</button>
+            <button type='submit' className='send' disabled={!toSend.from_name || !toSend.reply_to || !toSend.message}>Send</button>
          </form>
     </div>
   )
