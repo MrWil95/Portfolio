@@ -20,7 +20,7 @@ My portfolio is a place to not only showcase my skills and the projects I've cre
 
 ## [Wireframes](https://www.figma.com/file/6XNinT57ClerMoHNxz5zER/Portfolio?node-id=0%3A1)
 
-Landing Page
+<br>Landing Page</br>
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051097/Wireframe/Portfolio/2021-10-23_3_td4zkb.png)
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051091/Wireframe/Portfolio/2021-10-23_2_n6z7um.png)
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051277/Wireframe/Portfolio/2021-10-23_5_mnxbbh.png)
@@ -29,36 +29,36 @@ Landing Page
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052465/Wireframe/Portfolio/2021-10-23_6_crlzll.png)
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052481/Wireframe/Portfolio/2021-10-23_15_d3wjvb.png)
 
-Home
+<br>Home</br>
 ![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052500/Wireframe/Portfolio/2021-10-23_16_brk1uf.png)
 ![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052512/Wireframe/Portfolio/2021-10-23_17_riagmd.png)
 ![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052521/Wireframe/Portfolio/2021-10-23_8_e6fdxe.png)
 
-About
+<br>About</br>
 ![About](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052770/Wireframe/Portfolio/2021-10-23_18_mhbrby.png)
 
-Resume
+<br>Resume</br>
 ![Resume](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052779/Wireframe/Portfolio/2021-10-23_19_ban8f1.png)
 
-Work
+<br>Work</br>
 ![Work](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
 
-FullStack
+<br>FullStack</br>
 ![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052570/Wireframe/Portfolio/2021-10-23_9_gyfkvt.png)
 ![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052581/Wireframe/Portfolio/2021-10-23_23_jcfhuh.png)
 ![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052601/Wireframe/Portfolio/2021-10-23_12_tgwcul.png)
 ![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
 
-Graphics
+<br>Graphics</br>
 ![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052696/Wireframe/Portfolio/2021-10-23_10_cizxzl.png)
 ![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052710/Wireframe/Portfolio/2021-10-23_22_oaukni.png)
 ![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052721/Wireframe/Portfolio/2021-10-23_11_upgusn.png)
 ![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
 
-Contact Form
+<br>Contact Form</br>
 ![Contact Form](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052799/Wireframe/Portfolio/2021-10-23_21_rtmfxm.png)
 
-Contact Info
+<br>Contact Info</br>
 ![Contact Info](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052808/Wireframe/Portfolio/2021-10-23_13_thzyed.png)
 
 ## [Component Hierarchy](https://whimsical.com/portfolio-GAWqzU1ZKKh4949QQaBFBL)
