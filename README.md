@@ -22,17 +22,17 @@ My portfolio is a place to not only showcase my skills and the projects I've cre
 
 Landing Page
 ![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051097/Wireframe/Portfolio/2021-10-23_3_td4zkb.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051091/Wireframe/Portfolio/2021-10-23_2_n6z7um.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051277/Wireframe/Portfolio/2021-10-23_5_mnxbbh.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051273/Wireframe/Portfolio/2021-10-23_4_eakc6h.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052457/Wireframe/Portfolio/2021-10-23_14_rksw3f.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052465/Wireframe/Portfolio/2021-10-23_6_crlzll.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052481/Wireframe/Portfolio/2021-10-23_15_d3wjvb.png)
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051091/Wireframe/Portfolio/2021-10-23_2_n6z7um.png),
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051277/Wireframe/Portfolio/2021-10-23_5_mnxbbh.png),
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635051273/Wireframe/Portfolio/2021-10-23_4_eakc6h.png),
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052457/Wireframe/Portfolio/2021-10-23_14_rksw3f.png),
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052465/Wireframe/Portfolio/2021-10-23_6_crlzll.png),
+![Landing Page](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052481/Wireframe/Portfolio/2021-10-23_15_d3wjvb.png)
 
 Home
 ![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052500/Wireframe/Portfolio/2021-10-23_16_brk1uf.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052512/Wireframe/Portfolio/2021-10-23_17_riagmd.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052521/Wireframe/Portfolio/2021-10-23_8_e6fdxe.png)
+![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052512/Wireframe/Portfolio/2021-10-23_17_riagmd.png),
+![Home](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052521/Wireframe/Portfolio/2021-10-23_8_e6fdxe.png)
 
 About
 ![About](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052770/Wireframe/Portfolio/2021-10-23_18_mhbrby.png)
@@ -45,15 +45,15 @@ Work
 
 FullStack
 ![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052570/Wireframe/Portfolio/2021-10-23_9_gyfkvt.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052581/Wireframe/Portfolio/2021-10-23_23_jcfhuh.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052601/Wireframe/Portfolio/2021-10-23_12_tgwcul.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
+![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052581/Wireframe/Portfolio/2021-10-23_23_jcfhuh.png),
+![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052601/Wireframe/Portfolio/2021-10-23_12_tgwcul.png),
+![FullStack](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
 
 Graphics
 ![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052696/Wireframe/Portfolio/2021-10-23_10_cizxzl.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052710/Wireframe/Portfolio/2021-10-23_22_oaukni.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052721/Wireframe/Portfolio/2021-10-23_11_upgusn.png),
-(https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
+![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052710/Wireframe/Portfolio/2021-10-23_22_oaukni.png),
+![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052721/Wireframe/Portfolio/2021-10-23_11_upgusn.png),
+![Graphics](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052554/Wireframe/Portfolio/2021-10-23_20_ejygag.png)
 
 Contact Form
 ![Contact Form](https://res.cloudinary.com/dedlhqhuk/image/upload/v1635052799/Wireframe/Portfolio/2021-10-23_21_rtmfxm.png)
