@@ -45,7 +45,7 @@ export default function Form() {
             />
             <br />
             <input 
-               type='text'
+               type='email'
                name='reply_to'
                placeholder='Your email'
                value={send.reply_to}
