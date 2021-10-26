@@ -17,7 +17,7 @@ export default function Home() {
         <Link to='/about'>
           <button>Learn More</button>
         </Link>
-        <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1634999516/Alex_Drawing_isbefe.png' alt='Alex Wilbur drawing'/>
+        <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1634999516/Alex_Drawing_isbefe.png' alt='Alex Wilbur drawing' className='alexdrawing' />
       </div>
     </Layout>
   )

@@ -11,5 +11,4 @@
   font-size: clamp(1.75em, 7.5vw, 3.25em);
   -webkit-text-stroke: 1px white;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
-  
 }

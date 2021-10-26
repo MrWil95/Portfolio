@@ -5,8 +5,8 @@ import NavBar from './NavBar'
 const StyledBurger = styled.div`
   width: 2em;
   height: 2em;
-  position: fixed;
-  top: 1em;
+  margin-top: .75em;
+  margin-right: 2.5em;
   right: 1.25em;
   z-index: 10;
   display: none;
@@ -20,7 +20,7 @@ const StyledBurger = styled.div`
   div {
     width: 2em;
     height: 0.25em;
-    background-color: ${({ open }) => open ? '#000' : '#FFF'};
+    background-color: #FFF;
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
