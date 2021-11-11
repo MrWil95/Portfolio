@@ -3,24 +3,27 @@ import styled from 'styled-components'
 import Burger from './Burger'
 
 const StyledNav = styled.nav`
-  width: 100vw;
-  height: 5.75em;
-  box-shadow: 3px 3px 10px 0 #000;
-  padding: 0 1.25em;
-  display: flex;
-  justify-content: space-between;
   background-color: #3884DA;
+  box-shadow: 3px 3px 10px 0 #000;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1.5em, 8vw, 2em);
+  height: 5.75em;
+  justify-content: space-between;
+  padding: 0 .75em 0 0;
+  width: 100vw;
 
   .logo {
-    text-decoration: none;
     color: #D9A21B;
+    display: fixed;
     font-family: 'Rock Salt', cursive;
     font-size: clamp(1.25em, 5vw, 3.25em);
+    height: max-content;
     margin-left: 1em;
-    -webkit-text-stroke: 1px white;
+    text-decoration: none;
     text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
-    display: fixed;
-    z-index: 2;
+    -webkit-text-stroke: 1px white;
+    z-index: 3;
   }
 `;
 

@@ -3,28 +3,28 @@ import styled from 'styled-components'
 import NavBar from './NavBar'
 
 const StyledBurger = styled.div`
-  width: 2em;
+  display: none;
   height: 2em;
   margin-top: .75em;
   margin-right: 2.5em;
   right: 1.25em;
+  width: 2em;
   z-index: 10;
-  display: none;
 
   @media (max-width: 768px) {
     display: flex;
-    justify-content: space-around;
     flex-flow: column nowrap;
+    justify-content: space-around;
   }
 
   div {
-    width: 2em;
-    height: 0.25em;
     background-color: #FFF;
     border-radius: 10px;
+    height: 0.25em;
     transform-origin: 1px;
     transition: all 0.3s linear;
-  
+    width: 2em;
+    
     &:nth-child(1) {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }

@@ -2,29 +2,41 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Ul = styled.ul`
-  list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  list-style: none;
 
   li {
     padding: 1.125em 0.625em;
   }
 
   a {
-    text-decoration: none;
+    animation: ${({ open }) => open ? 'fadein 1s ease-out 500ms forwards' : ''};
     color: #FFF;
+    opacity: 0;
+    text-decoration: none;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 768px) {
-    flex-flow: column nowrap;
     background-color: #3884DA;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 2.75em;
-    right: 0;
+    flex-flow: column nowrap;
     height: 95vh;
-    width: 100vw;
+    position: fixed;
+    right: 0;
+    top: 2.75em;
+    transform: ${({ open }) => open ? 'translateY(0%)' : 'translateY(-100%)'};
     transition: transform 0.3s ease-in-out; 
+    width: 100vw;
+    z-index: 2;
   }
 `;
 

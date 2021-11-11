@@ -5,10 +5,21 @@
 }
 
 .LandingNavContainer a {
-  text-decoration: none;
+  animation: appear 2s ease-out 3.1s forwards;
   color: #D9A21B;
   font-family: 'Rock Salt', cursive;
   font-size: clamp(1.75em, 7.5vw, 3.25em);
+  opacity: 0;
+  text-decoration: none;
   -webkit-text-stroke: 1px white;
   text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

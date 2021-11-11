@@ -1,17 +1,31 @@
 import './Resume.css'
-import {Link} from 'react-router-dom'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
+import { Document, Page } from 'react-pdf'
 
 export default function Resume() {
+  const [numPages, setNumPages] = useState(null)
+  const [pageNumber, setPageNumber] = useState(3)
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages)
+  }
   return (
     <div className='ResumeShadow'>
       <div className='resumecontainer'>
         <Link to='/about'>
           <FaTimes />
         </Link>
-        <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1635054515/Wireframe/Portfolio/2021-10-20_6_fb05ly.png' alt='Resume Part 1' className='resumeprt1' />
-        <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1635054520/Wireframe/Portfolio/2021-10-20_7_pqyipz.png' alt='Resume Part 2' className='resumeprt2' />
-        <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1635054524/Wireframe/Portfolio/2021-10-20_8_mnsfk1.png' alt='Resume Part 3' className='resumeprt3' />
+        <Document 
+          file='AlexW-Resume.pdf'
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+          <Page pageNumber={pageNumber} />
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>Page {pageNumber} of {numPages}</p>
       </div>
     </div>
   )
