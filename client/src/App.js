@@ -1,5 +1,5 @@
 import './App.css'
-import {Route} from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Landing from './screens/Landing/Landing'
 import Home from './screens/Home/Home'
 import About from './screens/About/About'

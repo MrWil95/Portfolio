@@ -1,0 +1,32 @@
+.ResumeShadow {
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.resumecontainer {
+  background-color: rgb(200, 200, 200);
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  overflow: auto;
+  padding: 2em 0;
+  position: relative;
+  scroll-behavior: auto;
+  width: 75vw;
+  max-width: 50em;
+  min-width: 45em;
+}
+
+.close {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+}
+
+.page {
+  padding: .5em 0;
+}

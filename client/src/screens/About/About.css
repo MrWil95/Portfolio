@@ -1,14 +1,35 @@
 .AboutContainer {
   display: grid;
+  position: relative;
+}
+
+.resume {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: absolute;
+  z-index: 3;
+}
+
+.abouttitle {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: max-content;
 }
 
 .splitcontainer {
   display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   grid-template-columns: 50% 50%;
+  margin: 4em;
   padding: 2em;
   text-align: left;
 }
 
 .about2container {
   margin: 0 0 0 1em;
+}
+
+.link {
+  grid-column: 1 / 2;
 }

@@ -1,5 +1,5 @@
 import './About.css'
-import {Link, Route} from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import Resume from '../../components/Resume/Resume'
 
@@ -7,7 +7,7 @@ export default function About() {
   return (
     <Layout>
       <div className='AboutContainer'>
-        <Route path='/about/resume'>
+        <Route path='/about/resume' className='resume'>
           <Resume />
         </Route>
         <h1 className='abouttitle'>Who I Am</h1>

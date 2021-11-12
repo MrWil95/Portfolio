@@ -11,9 +11,7 @@ const Ul = styled.ul`
   }
 
   a {
-    animation: ${({ open }) => open ? 'fadein 1s ease-out 500ms forwards' : ''};
     color: #FFF;
-    opacity: 0;
     text-decoration: none;
   }
 
@@ -37,6 +35,11 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out; 
     width: 100vw;
     z-index: 2;
+
+    a {
+      animation: ${({ open }) => open ? 'fadein 1s ease-out 500ms forwards' : ''};
+      opacity: 0;
+    }
   }
 `;
 
