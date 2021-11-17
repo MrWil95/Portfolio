@@ -8,10 +8,11 @@ import AlexWResume from './AlexW-Resume.pdf'
 
 export default function Resume() {
   const [numPages, setNumPages] = useState(null)
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(null);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages)
+    setPageNumber(0)
   }
 
   return (
@@ -24,9 +25,9 @@ export default function Resume() {
         file={AlexWResume}
         onLoadSuccess={onDocumentLoadSuccess}
         >
-          <Page pageNumber={pageNumber} numPages={numPages} className='page'/>
-          <Page pageNumber={pageNumber + 1} numPages={numPages + 1} className='page'/>
-          <Page pageNumber={pageNumber + 2} numPages={numPages + 2} className='page'/>
+          <Page pageNumber={pageNumber + 1} numPages={numPages} className='page'/>
+          <Page pageNumber={pageNumber + 2} numPages={numPages + 1} className='page'/>
+          <Page pageNumber={pageNumber + 3} numPages={numPages + 2} className='page'/>
         </Document>
       </div>
     </div>
