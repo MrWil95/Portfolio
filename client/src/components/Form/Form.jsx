@@ -45,7 +45,7 @@ export default function Form() {
             />
             <br />
             <input 
-               type='text'
+               type='email'
                name='reply_to'
                placeholder='Your email'
                value={send.reply_to}
@@ -62,7 +62,7 @@ export default function Form() {
                className='info'
             />
             <br />
-            <button type='submit' className='send' disabled={!toSend}>Send</button>
+            <button type='submit' className='send' disabled={!toSend.from_name || !toSend.reply_to || !toSend.message}>Send</button>
          </form>
     </div>
   )

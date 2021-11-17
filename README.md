@@ -17,6 +17,9 @@ My portfolio is a place to not only showcase my skills and the projects I've cre
 - React
 - React-Router-Dom
 - Axios
+- react-icons
+- styled-components
+- emailjs-com
 
 ## [Wireframes](https://www.figma.com/file/6XNinT57ClerMoHNxz5zER/Portfolio?node-id=0%3A1)
 

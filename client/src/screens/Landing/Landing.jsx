@@ -5,14 +5,14 @@ export default function Landing() {
   return (
     <div className='LandingContainer'>
       <LandingNav />
-      <div className="slide">
-        <div className='landingtext'>
-          <h2 className='fullstack'>Full-Stack Developer</h2>
-          <h2 className='graphics'>Graphic Designer</h2>
-          <h2 className='travel'>Travel Enthusiast</h2>
-        </div>
+      <div className='landingrise'>
+        <ul className='landingtext'>
+          <li className='landingli'>Software Engineer</li>
+          <li className='landingli'>Graphic Designer</li>
+          <li className='landingli'>Travel Enthusiast</li>
+        </ul>
       </div>
-      <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1634963343/portfolio_pic_ej0fre.png' alt='Alex Wilbur' className='alex' />
+      <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1634963343/Wireframe/Portfolio/portfolio_pic_ej0fre.png' alt='Alex Wilbur' className='alex' />
     </div>
   )
 }
