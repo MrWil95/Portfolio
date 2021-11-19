@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-size: clamp(1.5em, 8vw, 2em);
-  height: 5.75em;
+  height: 5em;
   justify-content: space-between;
   padding: 0 .75em 0 0;
   width: 100vw;

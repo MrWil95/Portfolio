@@ -110,9 +110,6 @@
     transform: scale(0.05);
     transform-origin: bottom left;
   }
-  5%{
-
-  }
   100% {
     transform: scale(1);
     transform-origin: bottom left;
