@@ -1,20 +1,32 @@
 import './FullStack.css'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 
 export default function FullStack() {
+  const [isActive, setIsActive] = useState('false')
+
+  const hangleToggle = () => {
+    setIsActive(prevState => {
+      return !prevState
+    })
+  }
+
   return (
     <div className='EngineerContainer'>
       <div className='Tab'>
-        <Link to='./work/engineer'>
+        <button 
+          onClick={hangleToggle}
+          className='openbtn'
+        >
           Software Engineer
-        </Link>
+        </button>
       </div>
-      <div className='Paper'>
+      <div className={isActive ? 'Paper' : 'PaperScale'}>
         <div className='projects'>
           <h4>On the Move</h4>
           <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637181833/Wireframe/Portfolio/2021-11-17_1_ga4ccn.png' alt='On the Move Thumbnail' className='thumbnail' />
           <div className='tools'>
-            <p>Made With:</p>
+            <p className='madewith'>Made With:</p>
             <p>RUBY ON RAILS</p>
             <p>REACT JS</p>
             <p>REACT ICONS</p>
@@ -55,7 +67,7 @@ export default function FullStack() {
           </div>
         </div>
       </div>
-      <div className='Folder'></div>
+      <div className={isActive ? 'Folder' : 'FolderOpen'}></div>
     </div>
   )
 }
