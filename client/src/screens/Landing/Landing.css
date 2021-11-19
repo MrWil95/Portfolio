@@ -2,11 +2,12 @@
   animation: scale 2s ease-out 1s forwards;
   background-color: #3884DA;
   display: grid;
-  height: max-content;
+  height: 100vh;
   justify-items: center;
   margin: 2em;
   transform: scale(0.05);
   transform-origin: bottom left;
+  width: 100vw;
 }
 
 .landingrise {
