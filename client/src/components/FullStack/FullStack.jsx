@@ -1,12 +1,20 @@
 import './FullStack.css'
 import { useState } from 'react'
+import { FaTimes } from 'react-icons/fa'
 
 
 export default function FullStack() {
-  const [isActive, setIsActive] = useState('false')
+  const [open, setOpen] = useState('false')
+  const [close, setClose] = useState('false')
 
-  const hangleToggle = () => {
-    setIsActive(prevState => {
+  const handleOpen = () => {
+    setOpen(prevState => {
+      return !prevState
+    })
+  }
+
+  const handleClose = () => {
+    setClose(prevState => {
       return !prevState
     })
   }
@@ -15,13 +23,19 @@ export default function FullStack() {
     <div className='EngineerContainer'>
       <div className='Tab'>
         <button 
-          onClick={hangleToggle}
+          onClick={handleOpen}
           className='openbtn'
         >
           Software Engineer
         </button>
       </div>
-      <div className={isActive ? 'Paper' : 'PaperScale'}>
+      <div className={open ? 'Paper' : 'PaperScale' && close ? 'PaperScale' : 'PaperScaleBack'}>
+        <button
+          onClick={handleClose}
+          className='closebtn'
+        >
+          <FaTimes />
+        </button>
         <div className='projects'>
           <h4>On the Move</h4>
           <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637181833/Wireframe/Portfolio/2021-11-17_1_ga4ccn.png' alt='On the Move Thumbnail' className='thumbnail' />
@@ -67,7 +81,7 @@ export default function FullStack() {
           </div>
         </div>
       </div>
-      <div className={isActive ? 'Folder' : 'FolderOpen'}></div>
+      <div className={open ? 'Folder' : 'FolderOpen'}></div>
     </div>
   )
 }
