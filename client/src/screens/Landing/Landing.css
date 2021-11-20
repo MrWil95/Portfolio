@@ -1,20 +1,33 @@
 .LandingContainer {
   animation: scale 2s ease-out 1s forwards;
   background-color: #3884DA;
+  bottom: .25em;
   display: grid;
-  height: 100%;
-  justify-items: center;
+  height: 60%;
+  justify-content: center;
   margin: 2em;
+  position: absolute;
   transform: scale(0.05);
   transform-origin: bottom left;
-  width: 100%;
+  width: 63.75%;
+}
+
+.landingnavlink {
+  animation: appear 2s ease-out 3.1s forwards;
+  color: #D9A21B;
+  font-family: 'Rock Salt', cursive;
+  font-size: clamp(1.75em, 7.5vw, 3.25em);
+  opacity: 0;
+  text-decoration: none;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
 }
 
 .landingrise {
   display: flex;
   height: 2.25em;
   justify-items: center;
-  margin: 2em;
+  margin: 2em 2em .75em 2em;
   overflow-y: hidden;
   padding: 0 1em .75em 0;
   text-align: left;
@@ -34,15 +47,22 @@
   color: white;
   display: inline-block;
   font-size: clamp(1em, 3vw, 2em);
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.75em 0;
+}
+
+.landingli:first-child {
+  margin: unset;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 .alex {
   animation: appear 2s ease-out 7s forwards;
-  bottom: 2em;
-  margin: 0 0 0 35em;
   opacity: 0;
-  width: 50vw;
+  margin-left: 8em;
+  width: 30%;
   max-width: 15em;
   min-width: 7.5em;
 }
@@ -111,8 +131,20 @@
     transform: scale(0.05);
     transform-origin: bottom left;
   }
+  25% {
+    transform: scale(0.1);
+    transform-origin: bottom left;
+  }
+  50% {
+    transform: scale(0.35);
+    transform-origin: bottom left;
+  }
+  75% {
+    transform: scale(0.6);
+    transform-origin: bottom left;
+  }
   100% {
-    transform: scale(0.25);
+    transform: scale(1);
     transform-origin: bottom left;
   }
 }

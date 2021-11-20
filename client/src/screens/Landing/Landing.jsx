@@ -1,10 +1,12 @@
 import './Landing.css'
-import LandingNav from '../../components/LandingNav/LandingNav'
+import { Link } from 'react-router-dom'
 
 export default function Landing() {
   return (
     <div className='LandingContainer'>
-      <LandingNav />
+      <Link to='/home' className='landingnavlink'>
+        Alex Wilbur
+      </Link>
       <div className='landingrise'>
         <ul className='landingtext'>
           <li className='landingli'>Software Engineer</li>
