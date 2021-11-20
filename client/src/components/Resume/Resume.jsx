@@ -1,14 +1,14 @@
 import './Resume.css'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import AlexWResume from './AlexW-Resume.pdf'
 
-export default function Resume() {
+export default function Resume(props) {
   const [numPages, setNumPages] = useState(null)
   const [pageNumber, setPageNumber] = useState(null);
+  const { show, handleShow } = props
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages)
@@ -16,11 +16,9 @@ export default function Resume() {
   }
 
   return (
-    <div className='ResumeShadow'>
+    <div className={show ? 'ResumeShadow' : 'ResumeShadowShow'}>
       <div className='resumecontainer'>
-        <Link to='/about' className='close'>
-          <FaTimes />
-        </Link>
+        <FaTimes onClick={handleShow} className='close' />
         <Document
         file={AlexWResume}
         onLoadSuccess={onDocumentLoadSuccess}
