@@ -1,15 +1,20 @@
 import './About.css'
-import { Link, Route } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import Resume from '../../components/Resume/Resume'
+import { useState } from 'react'
 
 export default function About() {
+  const [show, setShow] = useState('false')
+
+  const handleShow = () => {
+    setShow(prevState => {
+      return !prevState
+    })
+  }
+
   return (
     <Layout>
       <div className='AboutContainer'>
-        <Route path='/about/resume' className='resume'>
-          <Resume />
-        </Route>
         <h1 className='abouttitle'>Who I Am</h1>
         <div className='splitcontainer'>
           <div className='about1container'>
@@ -20,10 +25,9 @@ export default function About() {
             <h3 className='about2'>Graphic Designer</h3>
             <p className='about2info'>Ever since I was a kid I’ve always taken an interest in drawing & designing my own creations. As I got older I moved my focus from pad & paper to digital media. Teaching myself how to use software like Krita, Blender, and Photoshop, I can create beautiful logos that will enhance the visual quality of your brand. I can also make stunning 3D models to use in your projects.</p>
           </div>
+          <button className='showbtn' onClick={handleShow}>Resume</button>
         </div>
-        <Link to='/about/resume'>
-          <button className='link'>Resume</button>
-        </Link>
+        <Resume show={show} handleShow={handleShow} />
       </div>
     </Layout>
   )

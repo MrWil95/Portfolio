@@ -1,14 +1,33 @@
 .ResumeShadow {
   align-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  bottom: 38.7em;
   display: grid;
   height: 100%;
   justify-content: center;
+  opacity: 0;
   padding: 2em 0;
+  position: relative;
+}
+
+.ResumeShadowShow {
+  align-content: center;
+  animation: fadeIn 2s ease forwards;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 38.7em;
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  padding: 2em 0;
+  position: relative;
+  transition: ease;
+  z-index: 4;
 }
 
 .resumecontainer {
   background-color: rgb(200, 200, 200);
+  bottom: 4em;
   display: grid;
   height: 100vh;
   justify-content: center;
@@ -27,6 +46,19 @@
   top: 1em;
 }
 
+.close:hover {
+  cursor: pointer;
+}
+
 .page {
   padding: .5em 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

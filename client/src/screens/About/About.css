@@ -3,13 +3,6 @@
   position: relative;
 }
 
-.resume {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  position: absolute;
-  z-index: 3;
-}
-
 .abouttitle {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -18,11 +11,12 @@
 
 .splitcontainer {
   display: grid;
+  font-size: clamp(1em, 3vw, 2em);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   grid-template-columns: 50% 50%;
-  margin: 4em;
   padding: 2em;
+  position: relative;
   text-align: left;
 }
 
@@ -30,6 +24,19 @@
   margin: 0 0 0 1em;
 }
 
-.link {
-  grid-column: 1 / 2;
+.showbtn {
+  background-color: #9DB8EE;
+  border: none;
+  border-radius: 10px;
+  bottom: 1.75em;
+  font-weight: 575;
+  height: 5em;
+  position: absolute;
+  right: 52em;
+  width: 12em;
+  z-index: 3;
+}
+
+.showbtn:hover {
+  cursor: pointer;
 }
