@@ -1,0 +1,30 @@
+.ContactContainer {
+  align-items: center;
+  background-color: #3884DA;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  justify-content: center;
+  margin: 3.75em auto;
+  position: relative;
+  width: 50vw;
+}
+
+.icons {
+  margin: 2em 0 0 0;
+}
+
+.iconlink {
+  color: black;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: clamp(1em, 3vw, 2em);
+  margin: 0 1em;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

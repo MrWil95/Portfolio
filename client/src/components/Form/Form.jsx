@@ -1,7 +1,7 @@
 import './Form.css'
 import { useState } from 'react'
-import { send } from 'emailjs-com'
 import { useHistory } from 'react-router'
+import { send } from 'emailjs-com'
 
 export default function Form() {
   const [toSend, setToSend] = useState({
@@ -60,6 +60,7 @@ export default function Form() {
                value={send.message}
                onChange={handleChange}
                className='info'
+               style={{height: "8em"}}
             />
             <br />
             <button type='submit' className='send' disabled={!toSend.from_name || !toSend.reply_to || !toSend.message}>Send</button>
