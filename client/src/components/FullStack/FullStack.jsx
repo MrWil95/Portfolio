@@ -22,6 +22,7 @@ export default function FullStack() {
           Software Engineer
         </button>
       </div>
+      <div className='TabBevel'></div>
       <div className={open ? 'Paper' : 'PaperScale'}>
         <button
           onClick={handleOpen}
@@ -31,9 +32,16 @@ export default function FullStack() {
         </button>
         <div className='projects'>
           <h4>On the Move</h4>
-          <a href='https://on-the-move.netlify.app'><img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637181833/Wireframe/Portfolio/2021-11-17_1_ga4ccn.png' alt='On the Move Thumbnail' className='thumbnail' /></a>
+          <a 
+            href='https://on-the-move.netlify.app' 
+            target='_blank'
+            rel='noopener noreferrer'
+            className='projectlink'
+          >
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637181833/Wireframe/Portfolio/2021-11-17_1_ga4ccn.png' alt='On the Move Thumbnail' className='thumbnail' />
+          </a>
           <div className='tools'>
-            <p className='madewith'>Made With:</p>
+            <p>Made With:</p>
             <p>RUBY ON RAILS</p>
             <p>REACT JS</p>
             <p>REACT ICONS</p>
@@ -47,7 +55,14 @@ export default function FullStack() {
         </div>
         <div className='projects'>
           <h4>Sound</h4>
-          <a href='https://sound-2021.netlify.app/'><img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637182854/Wireframe/Portfolio/2021-11-17_2_hpbhk2.png' alt='Sound thumbnail' className='thumbnail' /></a>
+          <a 
+            href='https://sound-2021.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='projectlink'
+          >
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637182854/Wireframe/Portfolio/2021-11-17_2_hpbhk2.png' alt='Sound thumbnail' className='thumbnail' />
+          </a>
           <div className='tools'>
             <p>Made With:</p>
             <p>EXPRESS JS</p>
@@ -64,7 +79,14 @@ export default function FullStack() {
         </div>
         <div className='projects'>
           <h4>Poke Duel</h4>
-          <a href='https://poke-duel.netlify.app'><img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637183825/Wireframe/Portfolio/2021-11-17_3_vrjgrg.png' alt='Poke Duel thumbnail' className='thumbnail' /></a>
+          <a 
+            href='https://poke-duel.netlify.app'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='projectlink'
+          >
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637183825/Wireframe/Portfolio/2021-11-17_3_vrjgrg.png' alt='Poke Duel thumbnail' className='thumbnail' />
+          </a>
           <div className='tools'>
             <p>Made With:</p>
             <p>REACT JS</p>
@@ -75,6 +97,7 @@ export default function FullStack() {
         </div>
       </div>
       <div className={open ? 'Folder' : 'FolderOpen'}></div>
+      <div className='BackFolder'></div>
     </div>
   )
 }
