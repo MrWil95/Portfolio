@@ -40,6 +40,10 @@
   min-width: 45em;
 }
 
+.resumecontainer::-webkit-scrollbar {
+  display: none;
+}
+
 .close {
   position: absolute;
   right: 2em;
