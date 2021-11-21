@@ -164,7 +164,7 @@ h4 {
 }
 
 .fade {
-  animation: fade 500ms ease forwards;
+  animation: fade 750ms ease forwards;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: .85em;
   height: 7.5em;
@@ -178,6 +178,15 @@ h4 {
 }
 
 .thumbnail {
+  border-radius: 5px;
+  left: -.10em;
+  position: relative;
+  top: -.17em;
+  width: 15vw;
+}
+
+.scale {
+  animation: scale2 1.5s ease forwards;
   border-radius: 5px;
   left: -.10em;
   position: relative;
@@ -326,5 +335,16 @@ h4 {
     transform: scale(1.5);
     transform-origin: bottom left;
     z-index: 3;
+  }
+}
+
+@keyframes scale2 {
+  0% {
+    transform: scale(0.98);
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(1.1);
+    transform-origin: center;
   }
 }

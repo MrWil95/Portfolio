@@ -72,7 +72,7 @@ export default function FullStack() {
             onMouseLeave={handleFade}
             className='projectcontainer'
           >
-            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637444811/Wireframe/Portfolio/2021-11-20_8_kqhmbp.png' alt='Sound thumbnail' className='thumbnail' />
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637444811/Wireframe/Portfolio/2021-11-20_8_kqhmbp.png' alt='Sound thumbnail' className={fade ? 'thumbnail' : 'scale'} />
             <p className={fade ? null : 'fade'}><span>Description:</span> On the Move is a blog app for those who move frequently, made with React.js on the front-end and Ruby on Rails on the back-end. This app gives the user the ability to create a secured account with the use of Bcrypt and JWT to create for them a hashed password keeping their info safe. As of now the user has the ability to create, edit, and delete their own posts to share with others interested in the topic.</p>
           </a>
           <div className='tools'>
