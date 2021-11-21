@@ -5,9 +5,16 @@ import { FaTimes } from 'react-icons/fa'
 
 export default function FullStack() {
   const [open, setOpen] = useState('false')
+  const [fade, setFade] = useState('false')
 
   const handleOpen = () => {
     setOpen(prevState => {
+      return !prevState
+    })
+  }
+
+  const handleFade = () => {
+    setFade(prevState => {
       return !prevState
     })
   }
@@ -22,7 +29,6 @@ export default function FullStack() {
           Software Engineer
         </button>
       </div>
-      <div className='TabBevel'></div>
       <div className={open ? 'Paper' : 'PaperScale'}>
         <button
           onClick={handleOpen}
@@ -36,9 +42,12 @@ export default function FullStack() {
             href='https://on-the-move.netlify.app' 
             target='_blank'
             rel='noopener noreferrer'
-            className='projectlink'
+            onMouseEnter={handleFade}
+            onMouseLeave={handleFade}
+            className='projectcontainer'
           >
-            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637181833/Wireframe/Portfolio/2021-11-17_1_ga4ccn.png' alt='On the Move Thumbnail' className='thumbnail' />
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637444815/Wireframe/Portfolio/2021-11-20_7_z0vgsz.png' alt='On the Move Thumbnail' className='thumbnail' />
+            <p className={fade ? null : 'fade'}><span>Description:</span> On the Move is a blog app for those who move frequently, made with React.js on the front-end and Ruby on Rails on the back-end. This app gives the user the ability to create a secured account with the use of Bcrypt and JWT to create for them a hashed password keeping their info safe. As of now the user has the ability to create, edit, and delete their own posts to share with others interested in the topic.</p>
           </a>
           <div className='tools'>
             <p>Made With:</p>
@@ -59,9 +68,12 @@ export default function FullStack() {
             href='https://sound-2021.netlify.app/'
             target='_blank'
             rel='noopener noreferrer'
-            className='projectlink'
+            onMouseEnter={handleFade}
+            onMouseLeave={handleFade}
+            className='projectcontainer'
           >
-            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637182854/Wireframe/Portfolio/2021-11-17_2_hpbhk2.png' alt='Sound thumbnail' className='thumbnail' />
+            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637444811/Wireframe/Portfolio/2021-11-20_8_kqhmbp.png' alt='Sound thumbnail' className='thumbnail' />
+            <p className={fade ? null : 'fade'}><span>Description:</span> On the Move is a blog app for those who move frequently, made with React.js on the front-end and Ruby on Rails on the back-end. This app gives the user the ability to create a secured account with the use of Bcrypt and JWT to create for them a hashed password keeping their info safe. As of now the user has the ability to create, edit, and delete their own posts to share with others interested in the topic.</p>
           </a>
           <div className='tools'>
             <p>Made With:</p>
@@ -85,7 +97,10 @@ export default function FullStack() {
             rel='noopener noreferrer'
             className='projectlink'
           >
-            <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637183825/Wireframe/Portfolio/2021-11-17_3_vrjgrg.png' alt='Poke Duel thumbnail' className='thumbnail' />
+            <div className='projectcontainer'>
+              <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637183825/Wireframe/Portfolio/2021-11-17_3_vrjgrg.png' alt='Poke Duel thumbnail' className='thumbnail' />
+              <p><span>Description:</span> On the Move is a blog app for those who move frequently, made with React.js on the front-end and Ruby on Rails on the back-end. This app gives the user the ability to create a secured account with the use of Bcrypt and JWT to create for them a hashed password keeping their info safe. As of now the user has the ability to create, edit, and delete their own posts to share with others interested in the topic.</p>
+            </div>
           </a>
           <div className='tools'>
             <p>Made With:</p>
