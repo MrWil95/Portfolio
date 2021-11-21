@@ -64,9 +64,16 @@
   grid-template-rows: 0% 100%;
   height: 292px;
   justify-content: space-between;
+  overflow: auto;
+  -ms-overflow-style: none;
   position: relative;
+  scrollbar-width: none;
   width: 110%;
   z-index: 1;
+}
+
+.PaperScale::-webkit-scrollbar {
+  display: none;
 }
 
 .closebtn {
@@ -147,7 +154,7 @@ h4 {
   opacity: 0;
   overflow: auto;
   -ms-overflow-style: none;
-  padding: .5em;
+  padding: .5em .75em .5em .25em;
   position: absolute;
   scrollbar-width: none;
   top: -1.30em;
@@ -262,6 +269,16 @@ h4 {
 .tools p:last-child {
   background-color: #FFCF59;
   border-radius: 5px;
+}
+
+.github {
+  bottom: -1.75em;
+  position: absolute;
+  left: 7.75em;
+}
+
+.githublink {
+  color: black;
 }
 
 .Folder {
