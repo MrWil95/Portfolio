@@ -122,3 +122,16 @@
     transform-origin: bottom left;
   }
 }
+
+@media (max-width: 500px) {
+  .LandingContainer {
+    bottom: .25em;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: center;
+    margin: 2em;
+    width: 50%;
+  }
+  
+}
