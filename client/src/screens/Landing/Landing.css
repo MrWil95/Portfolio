@@ -16,7 +16,7 @@
   animation: appear 2s ease-out 3.1s forwards;
   color: #D9A21B;
   font-family: 'Rock Salt', cursive;
-  font-size: clamp(1.75em, 7.5vw, 3.25em);
+  font-size: clamp(1.25em, 7.5vw, 3.25em);
   opacity: 0;
   text-decoration: none;
   -webkit-text-stroke: 1px white;
@@ -128,10 +128,11 @@
     bottom: .25em;
     display: flex;
     flex-direction: column;
-    height: 60%;
-    justify-content: center;
     margin: 2em;
     width: 55%;
   }
-  
+
+  .landingrise {
+    margin: 1em auto;
+  }
 }
