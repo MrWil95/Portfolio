@@ -135,4 +135,9 @@
   .landingrise {
     margin: 1em auto;
   }
+
+  .alex {
+    margin: 2em auto;
+    margin-left: unset;
+  }
 }
