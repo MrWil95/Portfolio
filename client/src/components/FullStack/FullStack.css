@@ -145,11 +145,13 @@ h4 {
   position: relative;
   text-align: left;
   width: 14.92vw;
+  max-width: 14.92em;
+  min-width: 9.92em;
 }
 
 .projectcontainer p {
   background-color: rgba(70, 70, 70, 0.75);
-  font-size: .85em;
+  font-size: clamp(.85em 3vw 1em);
   height: 7.5em;
   opacity: 0;
   overflow: auto;
@@ -190,6 +192,8 @@ h4 {
   position: relative;
   top: -.17em;
   width: 15vw;
+  max-width: 15em;
+  min-width: 10em;
 }
 
 .scale {

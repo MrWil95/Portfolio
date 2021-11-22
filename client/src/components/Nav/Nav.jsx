@@ -17,13 +17,20 @@ const StyledNav = styled.nav`
     color: #D9A21B;
     display: fixed;
     font-family: 'Rock Salt', cursive;
-    font-size: clamp(1.25em, 5vw, 3.25em);
+    font-size: clamp(1.10em, 5vw, 3.25em);
     height: max-content;
     margin-left: 1em;
     text-decoration: none;
     text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px white;
     z-index: 3;
+  }
+
+  @media (max-width: 500px) {
+    .logo {
+      margin-bottom: 1em;
+      margin-left: '.25em;
+    }
   }
 `;
 
