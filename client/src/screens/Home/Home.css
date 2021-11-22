@@ -58,6 +58,8 @@
   margin: 0 0 0em 10em;
   position: relative;
   width: 35vw;
+  max-width: 25em;
+  min-width: 15em;
 }
 
 .link {
@@ -114,5 +116,11 @@
 }
 
 @media (max-width: 500px) {
+  .HomeContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
+  /* .alexdrawing {
+  } */
 }

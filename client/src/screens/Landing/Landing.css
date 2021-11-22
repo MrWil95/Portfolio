@@ -1,11 +1,11 @@
 .LandingContainer {
   animation: scale 2s ease-out 1s forwards;
   background-color: #3884DA;
-  bottom: .25em;
+  bottom: 1em;
   display: grid;
-  height: 60%;
+  height: 62%;
   justify-content: center;
-  margin: 2em;
+  margin: 5em 2em 0.5em 2em;
   position: absolute;
   transform: scale(0.05);
   transform-origin: bottom left;
@@ -52,7 +52,7 @@
   animation: appear 2s ease-out 7s forwards;
   opacity: 0;
   margin-left: 9em;
-  width: 30%;
+  width: 31%;
   max-width: 15em;
   min-width: 7.5em;
 }
