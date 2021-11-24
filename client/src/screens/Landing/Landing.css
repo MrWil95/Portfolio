@@ -9,7 +9,7 @@
   margin: 1em auto;
   transform: scale(0.05);
   transform-origin: bottom left;
-  width: 58%
+  width: 66%
 }
 
 .landingnavlink {
@@ -101,7 +101,7 @@
 
 @keyframes scale {
   0% {
-    transform: scale(0.05);
+    transform: scale(0);
     transform-origin: bottom left;
   }
   25% {
