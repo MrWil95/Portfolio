@@ -1,15 +1,14 @@
 .LandingContainer {
+  align-items: center;
   animation: scale 2s ease-out 1s forwards;
   background-color: #3884DA;
-  bottom: 1em;
-  display: grid;
-  height: 62%;
-  justify-content: center;
-  margin: 5em 2em 0.5em 2em;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 28em;
+  justify-content: space-between;
   transform: scale(0.05);
   transform-origin: bottom left;
-  width: 63.75%;
+  width: 68%
 }
 
 .landingnavlink {
@@ -25,7 +24,6 @@
 
 .landingrise {
   height: 2.4em;
-  margin: 1em 5em 1.1em 2em;
   overflow-y: hidden;
   width: 30vw;
   max-width: 20em;
@@ -50,9 +48,9 @@
 
 .alex {
   animation: appear 2s ease-out 7s forwards;
+  margin-left: 1.75em;
   opacity: 0;
-  margin-left: 9em;
-  width: 31%;
+  width: 15%;
   max-width: 15em;
   min-width: 7.5em;
 }
@@ -123,21 +121,71 @@
   }
 }
 
-@media (max-width: 500px) {
+
+ @media (min-width: 281px) {
   .LandingContainer {
-    bottom: .25em;
+    margin-left: .85em;
+    width: 60%;
+  }
+  
+  .landingrise {
+    height: 2.4em;
+    overflow-y: hidden;
+    width: 30vw;
+    max-width: 20em;
+    min-width: 12em;
+  }
+  
+  .alex {
+    left: unset;
+    margin-left: unset;
+    margin: 4.25em auto 0;
+    position: unset;
+  }
+}
+
+/*@media (max-width: 575px) {
+  .LandingContainer {
     display: flex;
     flex-direction: column;
-    margin: 2em;
-    width: 56.5%;
+    justify-content: space-between;
+    width: 58.75%;
+  }
+  
+  .landingrise {
+    left: unset;
+    margin: 1em 0 1em 1.75em;
+    position: unset;
+  }
+  
+  .alex {
+    left: unset;
+    margin-left: unset;
+    margin: 4.25em auto 0;
+    position: unset;
+  }
+}
+
+@media (min-width: 375px) {
+  .LandingContainer {
+    bottom: -9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: 52%;
   }
 
   .landingrise {
-    margin: 1em 2em 1em 0;
+    left: unset;
+    margin: 1em 0 1em 1.75em;
+    position: unset;
   }
 
   .alex {
+    left: unset;
     margin-left: unset;
-    margin: 4.25em 0 0 4em;
+    margin: 4.25em auto 0;
+    position: unset;
   }
-}
+} */

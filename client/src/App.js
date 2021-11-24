@@ -1,4 +1,3 @@
-import './App.css'
 import { Route } from 'react-router-dom'
 import Landing from './screens/Landing/Landing'
 import Home from './screens/Home/Home'
@@ -8,7 +7,7 @@ import Contact from './screens/Contact/Contact'
 
 function App() {
   return (
-    <div className='App'>
+    <>
       <Route exact path='/'>
         <Landing />
       </Route>
@@ -24,7 +23,7 @@ function App() {
       <Route path='/contact'>
         <Contact />
       </Route>
-    </div>
+    </>
   )
 }
 
