@@ -6,9 +6,10 @@
   flex-direction: column;
   height: 28em;
   justify-content: space-between;
+  margin: 1em auto;
   transform: scale(0.05);
   transform-origin: bottom left;
-  width: 68%
+  width: 58%
 }
 
 .landingnavlink {
