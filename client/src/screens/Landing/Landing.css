@@ -145,7 +145,13 @@
 
 @media (min-width: 400px) {
   .LandingContainer {
-    width: calc(60% + 4px);
+    width: calc(60% + 5px);
+  }
+}
+
+@media (min-width: 500px) {
+  .LandingContainer {
+    width: calc(62% + 1px);
   }
 }
 
@@ -153,6 +159,13 @@
   .LandingContainer {
       bottom: 0;
       height: calc(63% + 2px);
+  }
+}
+
+@media (min-height: 720px) {
+  .LandingContainer {
+    bottom: calc(1em + 5px);
+    height: 62%;
   }
 }
 
