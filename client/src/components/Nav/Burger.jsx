@@ -1,3 +1,4 @@
+import './Nav.css'
 import { useState } from 'react'
 import styled from 'styled-components'
 import NavBar from './NavBar'

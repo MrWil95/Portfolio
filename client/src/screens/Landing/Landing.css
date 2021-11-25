@@ -56,8 +56,8 @@
   margin-left: .5em;
   opacity: 0;
   width: 15%;
-  max-width: 15em;
-  min-width: 7.5em;
+  max-width: 9em;
+  min-width: 6.75em;
 }
 
 @keyframes appear {
@@ -151,7 +151,15 @@
 
 @media (min-width: 500px) {
   .LandingContainer {
-    width: calc(62% + 1px);
+    width: calc(62% + 3px);
+  }
+}
+
+@media (min-height: 600px) {
+  .LandingContainer {
+    bottom: -0.14em;
+    height: calc(64% + -2px);
+    width: calc(64% + 6px);
   }
 }
 
@@ -164,7 +172,7 @@
 
 @media (min-height: 720px) {
   .LandingContainer {
-    bottom: calc(1em + 5px);
+    bottom: calc(1em + 6px);
     height: 62%;
   }
 }
@@ -189,49 +197,33 @@
   }
 }
 
-
-/*@media (max-width: 575px) {
+@media (min-height: 1366px) {
   .LandingContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 58.75%;
-  }
-  
-  .landingrise {
-    left: unset;
-    margin: 1em 0 1em 1.75em;
-    position: unset;
-  }
-  
-  .alex {
-    left: unset;
-    margin-left: unset;
-    margin: 4.25em auto 0;
-    position: unset;
+    bottom: 41.85em;
+    height: calc(33% - 7px);
+    width: calc(64% + 5px);
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 1280px) {
   .LandingContainer {
-    bottom: -9em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    width: 52%;
+    bottom: 6.5em;
+    height: calc(55% + 3px);
+    width: calc(57% + 9px);
   }
+}
 
-  .landingrise {
-    left: unset;
-    margin: 1em 0 1em 1.75em;
-    position: unset;
+@media (min-width: 1400px) {
+  .LandingContainer {
+    bottom: 0;
+    height: calc(63% + 5px);
+    width: calc(65% + 4px);
   }
+}
 
-  .alex {
-    left: unset;
-    margin-left: unset;
-    margin: 4.25em auto 0;
-    position: unset;
+@media (min-width: 1900px) {
+  .LandingContainer {
+    height: 64%;
+    width: calc(65% + 10px);
   }
-} */
+}
