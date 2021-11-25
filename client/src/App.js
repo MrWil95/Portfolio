@@ -1,3 +1,4 @@
+import './App.css'
 import { Route } from 'react-router-dom'
 import Landing from './screens/Landing/Landing'
 import Home from './screens/Home/Home'
@@ -5,9 +6,9 @@ import About from './screens/About/About'
 import Work from './screens/Work/Work'
 import Contact from './screens/Contact/Contact'
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div className='Container'>
       <Route exact path='/'>
         <Landing />
       </Route>
@@ -23,8 +24,6 @@ function App() {
       <Route path='/contact'>
         <Contact />
       </Route>
-    </>
+    </div>
   )
 }
-
-export default App
