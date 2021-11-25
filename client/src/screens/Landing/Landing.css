@@ -156,9 +156,9 @@
   }
 }
 
-@media (min-height: 731px) {
+@media (min-height: 736px) {
   .LandingContainer {
-    bottom: calc(2em + 1px);
+    bottom: calc(2em + 3px);
     height: 61%;
   }
 }
