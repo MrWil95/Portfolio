@@ -165,8 +165,14 @@
 
 @media (min-height: 667px) {
   .LandingContainer {
-      bottom: 0;
-      height: calc(63% + 2px);
+    bottom: 0;
+    height: calc(63% + 2px);
+  }
+}
+
+@media (min-height: 673px) {
+  .LandingContainer {
+    width: calc(61% + 4px);
   }
 }
 
