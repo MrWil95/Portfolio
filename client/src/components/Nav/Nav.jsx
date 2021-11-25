@@ -18,9 +18,10 @@ const StyledNav = styled.nav`
     color: #D9A21B;
     display: fixed;
     font-family: 'Rock Salt', cursive;
-    font-size: clamp(1.10em, 5vw, 3.25em);
+    font-size: clamp(.75em, 5vw, 3.25em);
     height: max-content;
-    margin-left: 1em;
+    margin-left: 2.75em;
+    margin-top: 2.25em;
     text-decoration: none;
     text-shadow: 2px 3px rgba(0, 0, 0, 0.7);
     -webkit-text-stroke: 1px white;

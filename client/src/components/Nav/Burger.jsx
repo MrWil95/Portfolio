@@ -46,10 +46,14 @@ export default function Burger() {
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div />
-        <div />
-        <div />
+      <StyledBurger 
+        open={open} 
+        onClick={() => setOpen(!open)} 
+        className='BurgerContainer'
+      >
+        <div className='burgerbars'/>
+        <div className='burgerbars'/>
+        <div className='burgerbars'/>
       </StyledBurger>
       <NavBar open={open} />
     </>

@@ -46,18 +46,21 @@ const Ul = styled.ul`
 
 export default function NavBar({ open }) {
   return (
-    <Ul open={open}>
-      <Link to='/home'>
-        <li>Home</li>
+    <Ul 
+      open={open} 
+      className='UlContainer'
+    >
+      <Link to='/home' className='navLinkContainer'>
+        <li classname='navlink'>Home</li>
       </Link>
-      <Link to='/about'>
-        <li>About</li>
+      <Link to='/about' className='navLinkContainer'>
+        <li classname='navlink'>About</li>
       </Link>
-      <Link to='/work'>
-        <li>Work</li>
+      <Link to='/work' className='navLinkContainer'>
+        <li classname='navlink'>Projects</li>
       </Link>
-      <Link to='/contact'>
-        <li>Contact</li>
+      <Link to='/contact' className='navLinkContainer'>
+        <li classname='navlink'>Contact</li>
       </Link>
     </Ul>
   )

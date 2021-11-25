@@ -1,3 +1,39 @@
 @media (min-width: 280px) {
-  
+  .BurgerContainer {
+    margin-left: 4em;
+    position: relative;
+    top: .75em;
+  }
+
+  .UlContainer {
+    top: 1em;
+    right: 0;
+  }
+
+  .navLinkContainer {
+    margin-left: 2em;
+    text-align: right;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo {
+    font-size: clamp(1.10em, 5vw, 3.25em);
+    margin-left: 1em;
+  }
+
+  .BurgerContainer {
+    margin-left: 6em;
+    top: 1.65em;
+  }
+
+  .UlContainer {
+    top: 1em;
+    right: 0;
+  }
+
+  .navLinkContainer {
+    margin-left: 2em;
+    text-align: right;
+  }
 }
