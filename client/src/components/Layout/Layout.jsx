@@ -1,3 +1,4 @@
+import './Layout.css'
 import Nav from '../Nav/Nav'
 
 export default function Layout(props) {

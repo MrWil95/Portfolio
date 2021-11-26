@@ -44,7 +44,7 @@
 }
 
 .intro {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(1em, 3vw, 1.75em);
   grid-row: 1 / 2;
   height: max-content;
   margin-block-start: 0;
@@ -137,5 +137,124 @@
 
   .linkbtn {
     width: 8em;
+  }
+}
+
+@media (min-height: 667px) {
+  .splitgrid {
+    grid-template-rows: 40% 40% 20%;
+  }
+
+  .alexdrawing {
+    grid-row: 2 / 3;
+    right: -5em;
+    width: calc(35vw + 3em);
+  }
+
+  .link {
+    grid-row: 3 / 3;
+    right: 6.75em;
+    top: 7.5em;
+  }
+
+  .linkbtn {
+    width: 12em;
+  }
+}
+
+@media (min-height: 731px) {
+  .alexdrawing {
+    right: -6em;
+  }
+
+  .link {
+    right: 7.75em;
+  }
+}
+
+@media (min-height: 736px) {
+  .link {
+    right: 8.75em;
+  }
+}
+
+@media (min-height: 812px) {
+  .alexdrawing {
+    grid-row: 2 / 3;
+    right: -5em;
+    width: calc(35vw + 3em);
+  }
+
+  .link {
+    grid-row: 3 / 3;
+    right: 6.75em;
+    top: 7.5em;
+  }
+
+  .linkbtn {
+    width: 12em;
+  }
+}
+
+@media (min-height: 823px) {
+  .alexdrawing {
+    right: -6em;
+  }
+
+  .link {
+    right: 7.75em;
+  }
+}
+
+@media (min-height: 1024px) {
+  .splitgrid {
+    grid-template-rows: 50% 50%;
+  }
+
+  .alexdrawing {
+    grid-row: 2 / 2;
+    right: -5em;
+    top: -2em;
+    width: calc(35vw + 2em);
+  }
+
+  .link {
+    grid-row: 2 / 2;
+    right: 2.75em;
+    top: 5.5em;
+  }
+
+  .linkbtn {
+    width: 12em;
+  }
+}
+
+@media (min-height: 1366px) {
+  .splitgrid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+  }
+
+  .intro {
+    grid-column: 1 / 2;
+  }
+
+  .alexdrawing {
+    grid-column: 2 / 2;
+    grid-row: unset;
+    right: -5em;
+    top: 5em;
+    width: 33vw;
+  }
+
+  .link {
+    grid-column: 1 / 2;
+    grid-row: unset;
+    left: 0;
+    top: 27.5em;
+  }
+
+  .linkbtn {
+    width: 12em;
   }
 }

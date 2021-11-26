@@ -159,7 +159,7 @@
   .LandingContainer {
     bottom: -0.14em;
     height: calc(64% + -2px);
-    width: calc(64% + 6px);
+    width: calc(60% + 2px);
   }
 }
 
@@ -200,6 +200,13 @@
 @media (min-height: 823px) {
   .LandingContainer {
     bottom: 7.85em;
+    width: calc(60% + 5px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .LandingContainer {
+    width: calc(64% + 6px);
   }
 }
 
