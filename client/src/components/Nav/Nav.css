@@ -230,6 +230,33 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .NavContainer {
+    top: -5em;
+  }
+
+  .logo {
+    margin-top: .5em;
+    margin-left: .75em;
+  }
+
+  .BurgerContainer {
+    display: none;
+  }
+
+  .UlContainerOpen {
+    background-color: unset;
+    flex-flow: row nowrap;
+    height: max-content;
+    right: -14.5em;
+    top: 3em;
+  }
+
+  .navLinkContainerOpen {
+    opacity: 1;
+  }
+}
+
 @media (min-height: 1366px) {
   .NavContainer {
     top: -10.5em;
@@ -249,7 +276,7 @@
     flex-flow: row nowrap;
     height: max-content;
     right: -14.5em;
-    top: 2.5em;
+    top: 3em;
   }
 
   .navLinkContainerOpen {

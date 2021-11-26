@@ -44,7 +44,7 @@
 }
 
 .intro {
-  font-size: clamp(1em, 3vw, 1.75em);
+  font-size: clamp(1em, 2.25vw, 1.75em);
   grid-row: 1 / 2;
   height: max-content;
   margin-block-start: 0;
@@ -229,10 +229,48 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .splitgrid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+  }
+
+  .homerise {
+    justify-self: start;
+  }
+
+  .intro {
+    grid-column: 1 / 2;
+  }
+
+  .alexdrawing {
+    grid-column: 2 / 2;
+    grid-row: unset;
+    right: -5em;
+    top: 0;
+    width: 33vw;
+  }
+
+  .link {
+    grid-column: 1 / 2;
+    grid-row: unset;
+    left: 0;
+    top: 21em;
+  }
+
+  .linkbtn {
+    width: 12em;
+  }
+}
+
 @media (min-height: 1366px) {
   .splitgrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: unset;
+  }
+
+  .homerise {
+    justify-self: start;
   }
 
   .intro {
