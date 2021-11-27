@@ -23,8 +23,20 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .layout-children {
+    top: -4em;
+  }
+}
+
 @media (min-height: 1366px) {
   .layout-children {
     top: -22em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .layout-children {
+    top: 0;
   }
 }
