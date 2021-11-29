@@ -1,6 +1,10 @@
 .AboutContainer {
-  display: grid;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
   position: relative;
+  top: 1em;
 }
 
 .abouttitle {
@@ -10,11 +14,10 @@
 }
 
 .splitcontainer {
-  display: grid;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
   font-size: clamp(1em, 3vw, 2em);
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  grid-template-columns: 50% 50%;
   padding: 2em;
   position: relative;
   text-align: left;
@@ -28,13 +31,10 @@
   background-color: #9DB8EE;
   border: none;
   border-radius: 10px;
-  bottom: 1.75em;
   font-weight: 575;
   height: 5em;
-  position: absolute;
-  right: 52em;
+  margin-top: 1em;
   width: 12em;
-  z-index: 3;
 }
 
 .showbtn:hover {

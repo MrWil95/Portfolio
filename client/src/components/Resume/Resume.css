@@ -1,7 +1,7 @@
 .ResumeShadow {
   align-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 38.7em;
+  bottom: 60em;
   display: grid;
   height: 100%;
   justify-content: center;
@@ -14,7 +14,7 @@
   align-content: center;
   animation: fadeIn 2s ease forwards;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 38.7em;
+  bottom: 60em;
   display: grid;
   height: 100%;
   justify-content: center;
@@ -22,12 +22,11 @@
   padding: 2em 0;
   position: relative;
   transition: ease;
-  z-index: 4;
 }
 
 .resumecontainer {
   background-color: rgb(200, 200, 200);
-  bottom: 4em;
+  bottom: 0;
   display: grid;
   height: 100vh;
   justify-content: center;
@@ -37,7 +36,7 @@
   scroll-behavior: auto;
   width: 75vw;
   max-width: 50em;
-  min-width: 45em;
+  min-width: 18em;
 }
 
 .resumecontainer::-webkit-scrollbar {
@@ -46,8 +45,8 @@
 
 .close {
   position: absolute;
-  right: 2em;
-  top: 1em;
+  left: 1em;
+  top: 0.75em;
 }
 
 .close:hover {
@@ -56,6 +55,11 @@
 
 .page {
   padding: .5em 0;
+  width: 15em;
+}
+
+.react-pdf__Page__canvas {
+  width: 35.5em;
 }
 
 @keyframes fadeIn {
