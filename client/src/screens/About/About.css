@@ -17,14 +17,10 @@
   align-items: center;
   display: flex;
   flex-flow: column;
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(0.75em, 2vw, 2em);
   padding: 2em;
   position: relative;
   text-align: left;
-}
-
-.about2container {
-  margin: 0 0 0 1em;
 }
 
 .showbtn {
@@ -39,4 +35,87 @@
 
 .showbtn:hover {
   cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .AboutContainer {
+    top: 3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .AboutContainer {
+    top: 10em;
+  }
+  
+  .splitcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    top: 0;
+  }
+  
+  .about2container {
+    margin-left: 1em;
+  }
+  
+  .showbtn {
+    margin-left: 20.5em;
+    margin-top: 3em;
+  }
+}
+
+@media (min-height: 812px) {
+  .AboutContainer {
+    top: 6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AboutContainer {
+    top: 0;
+  }
+
+  .splitcontainer {
+    top: -3.75em;
+  }
+
+  .showbtn {
+    margin-left: 30em;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .AboutContainer {
+    overflow: unset;
+    width: 86vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .AboutContainer {
+    width: unset;
+  }
+
+  .abouttitle {
+    font-size: 3em;
+  }
+
+  .splitcontainer {
+    top: 0;
+  }
+
+  .showbtn {
+    margin-left: 42em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .splitcontainer {
+    top: -4em;
+  }
+
+  .showbtn {
+    margin-left: 46em;
+  }
 }

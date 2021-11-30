@@ -127,16 +127,16 @@
   }
 
   .alexdrawing {
-    right: unset
+    right: -4em;
   }
 
   .link {
-    right: 1.5em;
-    top: 6.5em;
+    right: 5em;
+    top: 13.5em;
   }
 
   .linkbtn {
-    width: 8em;
+    width: 12em;
   }
 }
 
@@ -230,13 +230,18 @@
 }
 
 @media (min-width: 1024px) {
-  .splitgrid {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: unset;
+  .HomeContainer {
+    margin-top: 4em;
   }
 
   .homerise {
     justify-self: start;
+  }
+
+  .splitgrid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+    top: 0;
   }
 
   .intro {
@@ -268,10 +273,6 @@
     justify-self: start;
   }
 
-  .intro {
-    margin-top: 1em;
-  }
-
   .alexdrawing {
     right: -6em;
     top: 0;
@@ -286,6 +287,7 @@
   .splitgrid {
     grid-template-columns: 50% 50%;
     grid-template-rows: unset;
+    top: 0;
   }
 
   .homerise {
@@ -299,8 +301,8 @@
   .alexdrawing {
     grid-column: 2 / 2;
     grid-row: unset;
-    right: -5em;
-    top: 5em;
+    right: -7em;
+    top: 0;
     width: 33vw;
   }
 
@@ -308,7 +310,7 @@
     grid-column: 1 / 2;
     grid-row: unset;
     left: 0;
-    top: 27.5em;
+    top: 22em;
   }
 
   .linkbtn {
@@ -322,21 +324,65 @@
   }
 
   .intro {
-    margin-top: 1em;
+    font-size: clamp(1em, 2.25vw, 2em);
   }
 
   .alexdrawing {
-    right: -6em;
+    right: -10em;
     top: 0;
+    width: 35vw;
+    max-width: 30em;
   }
 
   .link {
-    top: 25.5em;
+    top: 27em;
+  }
+
+  .linkbtn {
+    height: 7em;
+    width: 15em;
   }
 }
 
 @media (min-width: 1600px) {
+  .homerise {
+    height: 4.4em;
+    max-width: 30em;
+  }
+
+  .homeli {
+    font-size: clamp(1em, 3vw, 4em);
+  }
+
+  .intro {
+    font-size: clamp(1em, 3.25vw, 2.25em);
+  }
+
   .alexdrawing {
-    width: 35vw;
+    right: -12em;
+  }
+
+  .link {
+    top: 31em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .homerise {
+    height: 5.4em;
+    max-width: 34em;
+  }
+
+  .intro {
+    font-size: 3em;
+  }
+
+  .alexdrawing {
+    right: -14em;
+    max-width: 38em;
+  }
+
+  .link {
+    top: 42em;
   }
 }

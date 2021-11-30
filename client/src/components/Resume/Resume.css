@@ -1,27 +1,28 @@
 .ResumeShadow {
   align-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 60em;
+  bottom: 0;
   display: grid;
   height: 100%;
   justify-content: center;
   opacity: 0;
   padding: 2em 0;
   position: relative;
+  transition: opacity 1s linear;
+  z-index: -1;
 }
 
 .ResumeShadowShow {
   align-content: center;
-  animation: fadeIn 2s ease forwards;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 60em;
+  bottom: 0;
   display: grid;
   height: 100%;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   padding: 2em 0;
   position: relative;
-  transition: ease;
+  transition: opacity 1s linear;
 }
 
 .resumecontainer {
@@ -34,8 +35,8 @@
   padding: 2em 0;
   position: relative;
   scroll-behavior: auto;
-  width: 75vw;
-  max-width: 50em;
+  width: 92vw;
+  max-width: 60em;
   min-width: 18em;
 }
 
@@ -62,11 +63,108 @@
   width: 35.5em;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@media (min-width: 375px) {
+  .ResumeShadow {
+    left: 0;
+    width: 100vw;
   }
-  100% {
-    opacity: 1;
+  
+  .ResumeShadowShow {
+    left: 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .ResumeShadow {
+    height: 31em;
+    top: -29.35em;
+  }
+  
+  .ResumeShadowShow {
+    height: 31em;
+    top: -29.35em;
+  }
+
+  .resumecontainer {
+    bottom: -0.25em;
+    height: 28em;
+  }
+
+  .page {
+    width: 38em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ResumeShadow {
+    height: 26em;
+    top: -33.5em;
+  }
+  
+  .ResumeShadowShow {
+    height: 26em;
+    top: -33.5em;
+  }
+
+  .resumecontainer {
+    bottom: 0;
+    height: 23em;
+  }
+
+  .page {
+    width: 38em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ResumeShadow {
+    height: 32em;
+    top: -44em;
+  }
+
+  .ResumeShadowShow {
+    height: 32em;
+    top: -44em;
+  }
+
+  .resumecontainer {
+    bottom: 0.5em;
+    height: 28em;
+    left: -1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ResumeShadow {
+    height: 45em;
+    top: -46em;
+  }
+
+  .ResumeShadowShow {
+    height: 45em;
+    top: -46em;
+  }
+
+  .resumecontainer {
+    bottom: 0.25em;
+    height: 41em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ResumeShadow {
+    height: 36em;
+    top: -50em;
+  }
+
+  .ResumeShadowShow {
+    height: 36em;
+    top: -50em;
+  }
+
+  .resumecontainer {
+    bottom: -0.25em;
+    height: 32em;
   }
 }

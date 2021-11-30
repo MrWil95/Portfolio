@@ -1,5 +1,4 @@
 .Container {
-  height: 100vh;
   position: static;
   width: 100vw;
 }
@@ -9,6 +8,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
   }
 }
 
