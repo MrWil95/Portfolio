@@ -1,0 +1,10 @@
+.WorkContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 768px) {
+  .WorkContainer {
+    flex-flow: unset;
+  }
+}

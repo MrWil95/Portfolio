@@ -3,14 +3,6 @@
   width: 100vw;
 }
 
-@media (min-width: 320px) {
-  .Container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-}
-
 @media (min-width: 1024px) {
   body {
     overflow: hidden;

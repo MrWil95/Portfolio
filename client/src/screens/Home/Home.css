@@ -344,6 +344,16 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .splitgrid {
+    top: -3em;
+  }
+
+  .link {
+    top: 25.5em;
+  }
+}
+
 @media (min-width: 1600px) {
   .homerise {
     height: 4.4em;

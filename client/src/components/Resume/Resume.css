@@ -10,6 +10,7 @@
   position: relative;
   transition: opacity 1s linear;
   z-index: -1;
+  width: 100%;
 }
 
 .ResumeShadowShow {
@@ -23,6 +24,7 @@
   padding: 2em 0;
   position: relative;
   transition: opacity 1s linear;
+  width: 100%;
 }
 
 .resumecontainer {
@@ -153,6 +155,23 @@
 }
 
 @media (min-width: 1500px) {
+  .ResumeShadow {
+    height: 36em;
+    top: -50em;
+  }
+
+  .ResumeShadowShow {
+    height: 36em;
+    top: -50em;
+  }
+
+  .resumecontainer {
+    bottom: -0.25em;
+    height: 32em;
+  }
+}
+
+@media (min-width: 1600px) {
   .ResumeShadow {
     height: 36em;
     top: -50em;

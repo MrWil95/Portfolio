@@ -119,3 +119,21 @@
     margin-left: 46em;
   }
 }
+
+@media (min-width: 1600px) {
+  .AboutContainer {
+    width: unset;
+  }
+
+  .abouttitle {
+    font-size: 3em;
+  }
+
+  .splitcontainer {
+    top: 0;
+  }
+
+  .showbtn {
+    margin-left: 42em;
+  }
+}
