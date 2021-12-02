@@ -46,7 +46,7 @@ export default function FullStack() {
       <div className={open ? 'Paper' : 'PaperScale'}>
         <button
           onClick={handleOpen}
-          className='closebtn'
+          className={open ? 'closebtnhide' : 'closebtn'}
         >
           <FaTimes />
         </button>
