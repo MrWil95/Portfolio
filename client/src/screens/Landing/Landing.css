@@ -105,23 +105,11 @@
 
 @keyframes scale {
   0% {
-    transform: scale(0);
-    transform-origin: bottom left;
-  }
-  25% {
-    transform: scale(0.1);
-    transform-origin: bottom left;
-  }
-  50% {
-    transform: scale(0.35);
-    transform-origin: bottom left;
-  }
-  75% {
-    transform: scale(0.6);
+    transform: scale(0.05);
     transform-origin: bottom left;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.5);
     transform-origin: bottom left;
   }
 }
@@ -155,7 +143,7 @@
   }
 }
 
-@media (min-height: 600px) {
+/* @media (min-height: 600px) {
   .LandingContainer {
     bottom: -0.14em;
     height: calc(64% + -2px);
@@ -202,7 +190,7 @@
     bottom: 7.85em;
     width: calc(60% + 5px);
   }
-}
+} */
 
 @media (min-width: 1024px) {
   .LandingContainer {
@@ -210,13 +198,13 @@
   }
 }
 
-@media (min-height: 1366px) {
+/* @media (min-height: 1366px) {
   .LandingContainer {
     bottom: 41.85em;
     height: calc(33% - 7px);
     width: calc(64% + 5px);
   }
-}
+} */
 
 @media (min-width: 1280px) {
   .LandingContainer {
