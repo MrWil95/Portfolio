@@ -350,7 +350,7 @@ h4 {
   left: 0.5em;
   position: absolute;
   top: 2.5em;
-  width: 93%;
+  width: 95%;
   z-index: -1;
 }
 
@@ -583,6 +583,33 @@ h4 {
   }
 }
 
+@media (min-width: 540px) {
+  @media (min-height: 720px) {
+    .closebtn {
+      right: -22.5em;
+    }
+
+    .closebtnhide {
+      right: -34em;
+    }
+
+    @keyframes stretch {
+      0% {
+        height: 292px;
+        margin-left: 0.75em;
+        width: 90%;
+      }
+  
+      100% {
+        height: 58vh;
+        margin-left: 6.35em;
+        margin-top: -2.35em;
+        width: 62%;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .EngineerContainer {
     margin-top: 24em;
@@ -623,6 +650,14 @@ h4 {
     transition: transform 2s ease 3s;
     width: 90%;
     z-index: 1;
+  }
+
+  .PaperScaleLeft::-webkit-scrollbar {
+    display: none;
+  }
+
+  .PaperScaleLeft .projects:nth-child(3) .thumbnail {
+    margin-top: .75em;
   }
 
   .projects:nth-child(2) {
@@ -673,4 +708,200 @@ h4 {
     }
   }
 }
+
+@media (min-width: 1024px) {
+  @media (min-height: 600px) {
+    .EngineerContainer {
+      margin-top: 4em;
+    }
+  
+    .EngineerContainer:last-child {
+      margin-top: 4em;
+    }
+  
+    .closebtn {
+      right: 2.75em;
+      top: -14.25em;
+    }
+  
+    @keyframes stretch {
+      0% {
+        height: 292px;
+        margin-left: 0.75em;
+        width: 90%
+      }
+      100% {
+        height: 48vh;
+        margin-left: 11em;
+        margin-top: -1em;
+        width: calc(100% + 10em);
+      }
+    }
+  
+    @keyframes stretchleft {
+      0% {
+        height: 292px;
+        margin-left: 0.75em;
+        width: 90%
+      }
+      100% {
+        height: 48vh;
+        margin-left: -21em;
+        margin-top: -1em;
+        width: calc(100% + 10em);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @media (min-height: 1366px) {
+    .EngineerContainer {
+      margin-top: 14em;
+    }
+  
+    .EngineerContainer:last-child {
+      margin-top: 14em;
+    }
+  
+    .closebtn {
+      right: 2.75em;
+      top: -14.25em;
+    }
+  
+    @keyframes stretch {
+      0% {
+        height: 292px;
+        margin-left: 0.75em;
+        width: 90%
+      }
+      100% {
+        height: 34vh;
+        margin-left: 11em;
+        margin-top: -7.5em;
+        width: calc(100% + 10em);
+      }
+    }
+  
+    @keyframes stretchleft {
+      0% {
+        height: 292px;
+        margin-left: 0.75em;
+        width: 90%
+      }
+      100% {
+        height: 34vh;
+        margin-left: -21em;
+        margin-top: -7.5em;
+        width: calc(100% + 10em);
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .EngineerContainer {
+    margin-top: 8em;
+  }
+  
+  .EngineerContainer:last-child {
+    margin-top: 8em;
+  }
+
+  .Paper {
+    margin-left: 1.5em;
+  }
+  
+  .PaperScale {
+    margin-left: 1.5em;
+  }
+
+  .PaperScaleLeft {
+    margin-left: 1.5em;
+  }
+  
+  .closebtn {
+    right: 2.75em;
+    top: -13.5em;
+  }
+
+  .closebtnhide {
+    right: -40.5em;
+    top: 0.85em;
+  }
+  
+  @keyframes stretch {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: 13.75em;
+      margin-top: -2.85em;
+      width: calc(100% + 12em);
+    }
+  }
+  
+  @keyframes stretchleft {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: -26.05em;
+      margin-top: -2.85em;
+      width: calc(100% + 12em);
+    }
+  }
+}
+
+@media (min-width: 1400px) { 
+  .PaperScaleLeft .closebtn {
+    right: 2.85em;
+    top: -14.25em;
+  }
+
+  .closebtn {
+    right: 2.75em;
+    top: -13.5em;
+  }
+
+  .closebtnhide {
+    right: -40.5em;
+    top: 0.85em;
+  }
+  
+  @keyframes stretch {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: 16.5em;
+      margin-top: -3.35em;
+      width: calc(100% + 15em);
+    }
+  }
+  
+  @keyframes stretchleft {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: -31.5em;
+      margin-top: -3.35em;
+      width: calc(100% + 15em);
+    }
+  }
+}
+
 
