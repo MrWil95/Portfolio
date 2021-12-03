@@ -22,10 +22,10 @@ export default function Graphics() {
           Graphic Design
         </button>
       </div>
-      <div className={open ? 'Paper' : 'PaperScale'}>
+      <div className={open ? 'Paper' : 'PaperScale' && 'PaperScaleLeft'}>
         <button
           onClick={handleOpen}
-          className='closebtn'
+          className={open ? 'closebtnhide' : 'closebtn'}
         >
           <FaTimes />
         </button>

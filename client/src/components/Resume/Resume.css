@@ -37,7 +37,7 @@
   padding: 2em 0;
   position: relative;
   scroll-behavior: auto;
-  width: 92vw;
+  width: 92%;
   max-width: 60em;
   min-width: 18em;
 }
@@ -50,6 +50,7 @@
   position: absolute;
   left: 1em;
   top: 0.75em;
+  z-index: 2;
 }
 
 .close:hover {
@@ -77,63 +78,136 @@
   }
 }
 
+@media (min-width: 540px) {
+  @media (min-height: 720px) {
+    .resumecontainer {
+      left: -6em;
+      width: 167%;
+      max-width: 100em;
+    }
+
+    .page {
+      left: -11.55em;
+      top: -8em;
+    }
+
+    .page:nth-child(2) {
+      top: -23em;
+    }
+
+    .page:last-child {
+      top: -38em;
+    }
+
+    .react-pdf__Document {
+      height: 34em;
+    }
+
+    .react-pdf__Page__canvas {
+      transform: scale(.7);
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .ResumeShadow {
     height: 31em;
-    top: -29.35em;
+    top: 0.65em;
   }
   
   .ResumeShadowShow {
     height: 31em;
-    top: -29.35em;
+    top: 0.65em;
   }
 
   .resumecontainer {
     bottom: -0.25em;
     height: 28em;
+    left: -0.25em;
+    padding: 2em;
+    width: 92%;
   }
 
   .page {
+    left: unset;
+    top: unset;
     width: 38em;
+  }
+
+  .page:nth-child(2) {
+    top: unset;
+  }
+
+  .page:last-child {
+    top: unset;;
+  }
+
+  .react-pdf__Page__canvas {
+    transform: unset;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  @media(min-height: 600px) {
+    .ResumeShadow {
+      height: 26em;
+      top: -32.5em;
+    }
+    
+    .ResumeShadowShow {
+      height: 26em;
+      top: -32.5em;
+    }
+    
+    .resumecontainer {
+      height: 22em;
+      top: 0;
+    }
   }
 }
 
 @media (min-width: 1024px) {
-  .ResumeShadow {
-    height: 26em;
-    top: -33.5em;
-  }
-  
-  .ResumeShadowShow {
-    height: 26em;
-    top: -33.5em;
-  }
+  @media (min-height: 1366px) {
+    .ResumeShadow {
+      height: 44em;
+      top: -49.5em;
+    }
+    
+    .ResumeShadowShow {
+      height: 44em;
+      top: -49.5em;
+    }
 
-  .resumecontainer {
-    bottom: 0;
-    height: 23em;
-  }
+    .resumecontainer {
+      bottom: 0;
+      height: 40em;
+      left: -5.25em;
+      width: calc(92% + 10em);
+    }
 
-  .page {
-    width: 38em;
+    .page {
+      width: 38em;
+    }
   }
 }
 
 @media (min-width: 1280px) {
   .ResumeShadow {
-    height: 32em;
-    top: -44em;
+    height: 38em;
+    top: -40em;
   }
 
   .ResumeShadowShow {
-    height: 32em;
-    top: -44em;
+    height: 38em;
+    top: -40em;
   }
 
   .resumecontainer {
-    bottom: 0.5em;
-    height: 28em;
-    left: -1em;
+    height: 33em;
+    left: -16em;
+    top: 0em;
+    width: calc(100% + 28em);
   }
 }
 
@@ -157,33 +231,51 @@
 @media (min-width: 1500px) {
   .ResumeShadow {
     height: 36em;
-    top: -50em;
+    top: -40em;
   }
 
   .ResumeShadowShow {
     height: 36em;
-    top: -50em;
+    top: -40em;
   }
 
   .resumecontainer {
-    bottom: -0.25em;
-    height: 32em;
+    margin-bottom: 0.5em;
+    height: 33em;
   }
 }
 
 @media (min-width: 1600px) {
   .ResumeShadow {
-    height: 36em;
-    top: -50em;
+    height: 33em;
+    top: -41em;
   }
 
   .ResumeShadowShow {
-    height: 36em;
-    top: -50em;
+    height: 33em;
+    top: -41em;
   }
 
   .resumecontainer {
-    bottom: -0.25em;
-    height: 32em;
+    margin-bottom: 0;
+    height: 30em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .ResumeShadow {
+    height: 42em;
+    top: -45em;
+  }
+
+  .ResumeShadowShow {
+    height: 42em;
+    top: -45em;
+  }
+
+  .resumecontainer {
+    height: 37em;
+    left: -31em;
+    width: calc(100% + 58em);
   }
 }

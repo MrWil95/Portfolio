@@ -2,14 +2,9 @@
   align-items: center;
   display: flex;
   flex-flow: column;
-  overflow: scroll;
-  position: relative;
-  top: 1em;
 }
 
 .abouttitle {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   height: max-content;
 }
 
@@ -43,97 +38,116 @@
   }
 }
 
-@media (min-width: 768px) {
-  .AboutContainer {
-    top: 10em;
+@media(min-width: 375pc) {
+  @media (min-height: 812px) {
+    .AboutContainer {
+      top: 6em;
+    }
   }
-  
+}
+
+@media (min-width: 540px) {
+  @media (min-height: 720px) {
+    .AboutContainer {
+      margin-top: 4em;
+    }
+
+    .splitcontainer {
+      align-items: unset;
+      display: grid;
+      font-size: clamp(0.75em, 3vw, 2em);
+      grid-template-columns: 50% 50%;
+    }
+
+    .showbtn {
+      grid-column: 1 /span 2;
+      justify-self: center;
+    }
+
+    .about2container {
+      margin-left: 1em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .abouttitle {
+    margin-bottom: 0;
+    margin-top: 5em;
+  }
+
   .splitcontainer {
     display: grid;
+    font-size: clamp(0.75em, 2.75vw, 2em);
     grid-template-columns: 50% 50%;
-    top: 0;
+    margin-top: 1em;
   }
   
   .about2container {
     margin-left: 1em;
   }
-  
-  .showbtn {
-    margin-left: 20.5em;
-    margin-top: 3em;
-  }
 }
 
-@media (min-height: 812px) {
-  .AboutContainer {
-    top: 6em;
+
+
+@media (min-width: 1024px) {
+  @media (min-height: 600px) {
+    .AboutContainer {
+      margin-top: 0;
+    }
+    
+    .abouttitle {
+      margin-top: 1em;
+    }
+    
+    .splitcontainer {
+      font-size: clamp(0.75em, 2vw, 2em);
+      margin-top: 0;
+      top: -1em;
+    }
+    
+    .showbtn {
+      grid-column: 1 / span 2;
+      justify-self: center;
+    }
   }
 }
 
 @media (min-width: 1024px) {
-  .AboutContainer {
-    top: 0;
-  }
+  @media (min-height: 1366px) {
+    .AboutContainer {
+      margin-top: 0;
+    }
 
-  .splitcontainer {
-    top: -3.75em;
-  }
+    .abouttitle {
+      margin-top: 1em;
+    }
 
-  .showbtn {
-    margin-left: 30em;
-    margin-top: 1em;
-  }
-}
-
-@media (min-width: 1280px) {
-  .AboutContainer {
-    overflow: unset;
-    width: 86vw;
+    .splitcontainer {
+      font-size: clamp(0.75em, 2.75vw, 2em);
+      margin-top: 0;
+    }
   }
 }
 
 @media (min-width: 1400px) {
-  .AboutContainer {
-    width: unset;
-  }
-
   .abouttitle {
     font-size: 3em;
   }
 
   .splitcontainer {
-    top: 0;
+    font-size: clamp(0.75em, 1.75vw, 2em);
   }
 
   .showbtn {
-    margin-left: 42em;
-  }
-}
-
-@media (min-width: 1500px) {
-  .splitcontainer {
-    top: -4em;
-  }
-
-  .showbtn {
-    margin-left: 46em;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-left: unset;
   }
 }
 
 @media (min-width: 1600px) {
-  .AboutContainer {
-    width: unset;
-  }
-
   .abouttitle {
-    font-size: 3em;
-  }
-
-  .splitcontainer {
-    top: 0;
-  }
-
-  .showbtn {
-    margin-left: 42em;
+    font-size: 2.75em;
   }
 }
