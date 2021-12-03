@@ -5,11 +5,13 @@ import { FaTimes } from 'react-icons/fa'
 
 export default function Graphics() {
   const [open, setOpen] = useState('false')
+  const [phonewidth, setPhoneWidth] = useState(null)
 
   const handleOpen = () => {
     setOpen(prevState => {
       return !prevState
     })
+    setPhoneWidth(window.innerWidth < 767)
   }
 
   return (
@@ -22,7 +24,7 @@ export default function Graphics() {
           Graphic Design
         </button>
       </div>
-      <div className={open ? 'Paper' : 'PaperScale' && 'PaperScaleLeft'}>
+      <div className={open ? 'Paper' : 'PaperScale' && phonewidth ? 'PaperScale' : 'PaperScaleLeft'}>
         <button
           onClick={handleOpen}
           className={open ? 'closebtnhide' : 'closebtn'}
