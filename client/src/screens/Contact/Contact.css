@@ -9,6 +9,39 @@
   margin: 3.75em auto;
   position: relative;
   width: 50vw;
+  max-width: 40em;
+  min-width: 16em;
+}
+
+.send-message {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.info {
+  border: none;
+  border-radius: 5px;
+  height: 2.5em;
+  width: 94%
+}
+
+.info:first-child {
+  margin-top: 1em;
+}
+
+.send {
+  background-color: #9DB8EE;
+  border: none;
+  border-radius: 10px;
+  font-weight: 575;
+  height: 5em;
+  margin: 1em 0;
+  width: 12em;
+}
+
+.send:hover {
+  cursor: pointer;
 }
 
 .icons {
