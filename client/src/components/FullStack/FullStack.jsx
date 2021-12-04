@@ -98,9 +98,9 @@ export default function FullStack() {
           className='projectcontainer'
         >
           <img src='https://res.cloudinary.com/dedlhqhuk/image/upload/v1637444811/Wireframe/Portfolio/2021-11-20_8_kqhmbp.png' alt='Sound thumbnail' className={sound ? 'thumbnail' : 'scale'} />
-          <p className={sound? null : 'fade'}><span>Description:</span> Sound is a marketplace like Etsy where musicians can sell their audio equipment at a far price. Built with React and Express, just signup and signin with a secure password hased using JWT and Bcrypt to keep everyone safer. A team full of talented engineers came together and deployed this project using</p>
+          <p className={sound? null : 'fade'}><span>Description:</span> Sound is a marketplace like Etsy where musicians can sell their audio equipment at a fair price. Built with React and Express, just signup and signin with a secure password hased using JWT and Bcrypt to keep everyone safe. A team full of talented engineers came together and deployed this project using Heroku for the back-end and Netlify for the front.</p>
         </a>
-        <p className='description'><span>Description:</span> Sound is a marketplace like Etsy where musicians can sell their audio equipment at a far price. Built with React and Express, just signup and signin with a secure password hased using JWT and Bcrypt to keep everyone safer. A team full of talented engineers came together and deployed this project using</p>
+        <p className='description'><span>Description:</span> Sound is a marketplace like Etsy where musicians can sell their audio equipment at a far price. Built with React and Express, just signup and signin with a secure password hased using JWT and Bcrypt to keep everyone safer. A team full of talented engineers came together and deployed this project using Heroku for the back-end and Netlify for the front.</p>
         <div className='tools'>
           <p>Made With:</p>
           <p>EXPRESS JS</p>

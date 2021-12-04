@@ -815,7 +815,7 @@ h4 {
   .fade {
     animation: fade 750ms ease forwards;
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: .85em;
+    font-size: .65em;
     height: 7.5em;
     opacity: 0;
     overflow: auto;
