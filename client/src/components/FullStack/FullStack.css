@@ -207,34 +207,11 @@ h4 {
   text-decoration: underline;
 }
 
-.fade {
-  animation: fade 750ms ease forwards;
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: .85em;
-  height: 7.5em;
-  opacity: 0;
-  overflow: auto;
-  -ms-overflow-style: none;
-  padding: .5em;
-  position: absolute;
-  scrollbar-width: none;
-  top: -1.30em;
-}
-
 .thumbnail {
   border-radius: 5px;
   width: 15%;
   max-width: 15em;
   min-width: 10em;
-}
-
-.scale {
-  animation: scale1 1.5s ease forwards;
-  border-radius: 5px;
-  left: -.10em;
-  position: relative;
-  top: -.17em;
-  width: 15vw;
 }
 
 .tools {
@@ -249,6 +226,7 @@ h4 {
 .tools p {
   font-size: .7em;
   margin: .2em .25em .1em .25em;
+  padding: .5em;
   text-align: left;
 }
 
@@ -829,6 +807,33 @@ h4 {
     right: -40.5em;
     top: 0.85em;
   }
+
+  .projects .description {
+    display: none;
+  }
+
+  .fade {
+    animation: fade 750ms ease forwards;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: .85em;
+    height: 7.5em;
+    opacity: 0;
+    overflow: auto;
+    -ms-overflow-style: none;
+    padding: .5em;
+    position: absolute;
+    scrollbar-width: none;
+    top: -1.30em;
+  }
+
+  .scale {
+    animation: scale1 1.5s ease forwards;
+    border-radius: 5px;
+    position: relative;
+    width: 15%;
+    max-width: 15em;
+    min-width: 10em;
+  }
   
   @keyframes stretch {
     0% {
@@ -859,7 +864,195 @@ h4 {
   }
 }
 
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
+  .Paper .closebtnhide {
+    right: -40.5em;
+    top: 0.85em;
+  }
+
+  .PaperScale {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  
+  .PaperScale .closebtn {
+    right: -19.75em;
+    top: -13.6em;
+  }
+  
+  .PaperScale .projects:nth-child(3) {
+    top: -.85em;
+  }
+  
+  .PaperScale .projects:nth-child(3) .github {
+    position: relative;
+    top: 1.15em;
+  }
+  
+  .PaperScale .projects:last-child {
+    top: -.9em;
+  }
+  
+  .PaperScale .projects:last-child p:nth-child(4) {
+    font-size: 0.69em;
+  }
+  
+  .PaperScale .projects:last-child .github {
+    position: relative;
+    top: 1.1em;
+  }
+  
+  
+  .PaperScaleLeft {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  
+  .PaperScaleLeft .closebtn {
+    right: -20.15em;
+    top: -13.5em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(2) {
+    position: relative;
+    top: -3.6em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(2) .tools {
+    position: relative;
+    top: 3.5em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(3) {
+    position: relative;
+    top: -1.84em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(3) .tools {
+    position: relative;
+    top: 3em;
+  }
+
+  .PaperScaleLeft .projects:last-child .tools p:nth-child(3) {
+    font-size: .63em;
+  }
+  
+  .projects:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .projectcontainer {
+    margin-bottom: 2em;
+  }
+
+  .tools {
+    width: 56%;
+  }
+  
+  @keyframes stretch {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: 15.25em;
+      margin-top: -4.75em;
+      width: calc(100% + 13em);
+    }
+  }
+  
+  @keyframes stretchleft {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: -28.5em;
+      margin-top: -4.75em;
+      width: calc(100% + 13em);
+    }
+  }
+}
+
+@media (min-width: 1500px) { 
+  .PaperScale .closebtn {
+    right: -21.75em;
+    top: -12.75em;
+  }
+  
+  .PaperScale .closebtnhide {
+    right: -40.5em;
+    top: 0.85em;
+  }
+
+  
+  .PaperScale .projects:nth-child(2) .github {
+    bottom: -1.1em;
+    position: relative;
+  }
+  
+  .PaperScale .projects:nth-child(3) {
+    top: 0.83em;
+  }
+  
+  .PaperScale .projects:nth-child(3) .github {
+    top: unset;
+  }
+  
+  .PaperScale .projects:last-child {
+    top: .8em;
+  }
+  
+  .PaperScale .projects:last-child .github {
+    top: unset;
+  }
+
+  .PaperScaleLeft .closebtn {
+    right: -22.15em;
+    top: -13.5em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(2) {
+    top: -3.1em;
+  }
+
+  .PaperScaleLeft .projects:nth-child(3) {
+    top: -1.4em;
+  }
+  
+  @keyframes stretch {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: 16.5em;
+      margin-top: -3.35em;
+      width: calc(100% + 15em);
+    }
+  }
+  
+  @keyframes stretchleft {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 52vh;
+      margin-left: -31.5em;
+      margin-top: -3.35em;
+      width: calc(100% + 15em);
+    }
+  }
+}
+
+@media (min-width: 1600px) { 
   .PaperScaleLeft .closebtn {
     right: 2.85em;
     top: -14.25em;
@@ -903,5 +1096,4 @@ h4 {
     }
   }
 }
-
 
