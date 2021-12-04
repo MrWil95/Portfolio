@@ -987,7 +987,6 @@ h4 {
     right: -40.5em;
     top: 0.85em;
   }
-
   
   .PaperScale .projects:nth-child(2) .github {
     bottom: -1.1em;
@@ -1053,19 +1052,18 @@ h4 {
 }
 
 @media (min-width: 1600px) { 
-  .PaperScaleLeft .closebtn {
-    right: 2.85em;
-    top: -14.25em;
+  .PaperScale .closebtn {
+    right: -22.75em;
+    top: -12.5em;
   }
-
-  .closebtn {
-    right: 2.75em;
-    top: -13.5em;
-  }
-
-  .closebtnhide {
+  
+  .PaperScale .closebtnhide {
     right: -40.5em;
     top: 0.85em;
+  }
+  
+  .PaperScaleLeft .closebtn {
+    right: -23.15em;
   }
   
   @keyframes stretch {
@@ -1076,8 +1074,8 @@ h4 {
     }
     100% {
       height: 52vh;
-      margin-left: 16.5em;
-      margin-top: -3.35em;
+      margin-left: 17.5em;
+      margin-top: -3.85em;
       width: calc(100% + 15em);
     }
   }
@@ -1090,10 +1088,57 @@ h4 {
     }
     100% {
       height: 52vh;
-      margin-left: -31.5em;
-      margin-top: -3.35em;
+      margin-left: -32.5em;
+      margin-top: -3.85em;
       width: calc(100% + 15em);
     }
   }
 }
 
+@media (min-width: 1900px) {
+  .EngineerContainer {
+    margin-top: 10em;
+  }
+
+  .EngineerContainer:last-child {
+    margin-top: 10em;
+  }
+
+  .PaperScale .closebtn {
+    right: -27.5em;
+    top: -11.25em;
+  }
+  
+  .PaperScaleLeft .closebtn {
+    right: -27.5em;
+    top: -12em;
+  }
+  
+  @keyframes stretch {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 54vh;
+      margin-left: 20.5em;
+      margin-top: -4.25em;
+      width: calc(100% + 18em);
+    }
+  }
+  
+  @keyframes stretchleft {
+    0% {
+      height: 292px;
+      margin-left: 0.75em;
+      width: 90%
+    }
+    100% {
+      height: 54vh;
+      margin-left: -38.75em;
+      margin-top: -4.25em;
+      width: calc(100% + 18em);
+    }
+  }
+}
