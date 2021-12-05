@@ -46,33 +46,45 @@ export default function Contact() {
     <Layout>
       <div className='ContactContainer'>
         <form onSubmit={handleMessage} className='send-message'>
-          <input 
-            type='text'
-            name='from_name'
-            placeholder='Your name'
-            value={send.from_name}
-            onChange={handleChange}
-            className='info'
-          />
+          <div>
+            <input 
+              type='text'
+              required
+              name='from_name'
+              value={send.from_name}
+              onChange={handleChange}
+              className='info'
+              id='name'
+            />
+            <label htmlFor='name' className='label'>Name</label>
+          </div>
           <br />
-          <input 
-            type='email'
-            name='reply_to'
-            placeholder='Your email'
-            value={send.reply_to}
-            onChange={handleChange}
-            className='info'
-          />
+          <div>
+            <input 
+              type='email'
+              required
+              name='reply_to'
+              value={send.reply_to}
+              onChange={handleChange}
+              className='info'
+              id='email'
+            />
+            <label htmlFor='email' className='label'>Email</label>
+          </div>      
           <br />
-          <textarea
-            type='text'
-            name='message'
-            placeholder='Your message'
-            value={send.message}
-            onChange={handleChange}
-            className='info'
-            style={{height: "8em"}}
-          />
+          <div>
+            <textarea
+              type='text'
+              required
+              name='message'
+              value={send.message}
+              onChange={handleChange}
+              className='info'
+              id='message'
+              style={{height: "5.57em"}}
+            />
+            <label htmlFor='message' className='label'>Message </label>
+          </div>
           <br />
           <button type='submit' className='send' disabled={!toSend.from_name ||!toSend.reply_to || !toSend.message}>Send</button>
         </form>

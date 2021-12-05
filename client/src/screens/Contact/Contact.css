@@ -5,8 +5,10 @@
   display: flex;
   flex-direction: column;
   height: 65vh;
+  min-height: 25em;
   justify-content: center;
-  margin: 3.75em auto;
+  letter-spacing: 2px;
+  margin: 4.25em auto;
   position: relative;
   width: 50vw;
   max-width: 40em;
@@ -14,20 +16,94 @@
 }
 
 .send-message {
+  align-items: center;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+  width: 60vw;
+  max-width: 28em;
+  min-width: 12em;
+}
+
+.send-message div {
+  position: relative;
+  width: 100%;
 }
 
 .info {
   border: none;
   border-radius: 5px;
-  height: 2.5em;
-  width: 94%
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  height: 1.95em;
+  transition: transform 1s;
+  width: 100%;
 }
 
-.info:first-child {
-  margin-top: 1em;
+.info:valid + label {
+  opacity: 0;
+}
+
+
+.info:focus {
+  border: 3px solid #D9A21B;
+  outline: none;
+  padding-left: 1em;
+  transform: translateX(-9.9%);
+}
+
+#name:focus + label {
+  background: #D9A21B;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+  height: 1.57em;
+  padding: 0.51em 0.5em 0.49em 0.5em;
+  top: 0;
+  transform: translateX(210%);
+}
+
+#email:focus + label {
+  background: #D9A21B;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+  height: 1.57em;
+  padding: 0.51em 0.5em 0.49em 0.5em;
+  top: 0;
+  transform: translateX(230%);
+}
+
+#message:focus + label {
+  background: #D9A21B;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+  height: 2.47em;
+  padding: 2.95em 0.5em 2em 0.5em;
+  top: 0;
+  transform: translateX(123%);
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea:focus {
+  padding-top: 1em;
+}
+
+.label {
+  align-self: flex-start;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95em;
+  font-weight: bold;
+  margin-left: .5em;
+  position: absolute;
+  text-align: center;
+  transition: background 500ms, color 500ms, opacity 1s, transform 1s;
+  top: 0.5em;
 }
 
 .send {
@@ -45,7 +121,7 @@
 }
 
 .icons {
-  margin: 2em 0 0 0;
+  margin: 0.5em 0;
 }
 
 .iconlink {
@@ -54,10 +130,317 @@
 }
 
 .icon {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(1.5em, 3vw, 2em);
   margin: 0 1em;
 }
 
 .icon:hover {
   cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .ContactContainer {
+    margin: 2.15em auto;
+  }
+}
+
+@media (min-width: 360px) {
+  .ContactContainer {
+    margin: 3.5em auto;
+  }
+
+  .info:focus {
+    transform: translateX(-4.9%);
+  }
+  
+  #name:focus + label {
+    transform: translateX(235%);
+  }
+  
+  #email:focus + label {
+    transform: translateX(250%);
+  }
+  
+  #message:focus + label {
+    transform: translateX(139%);
+  }
+}
+
+@media (min-width: 375px) {
+  @media (min-height: 667px) {
+    .ContactContainer {
+      margin: 2.15em auto;
+      top: 4.25em;
+      min-width: 20em;
+    }
+
+    .info:focus {
+      transform: translateX(-14.9%);
+    }
+
+    #name:focus + label {
+      transform: translateX(287%);
+    }
+    
+    #email:focus + label {
+      transform: translateX(299%);
+    }
+    
+    #message:focus + label {
+      transform: translateX(175%);
+    }
+  }
+}
+
+
+@media (min-width: 375px) {
+  @media (min-height: 812px){
+    .ContactContainer {
+      top: 11em;
+    }
+    
+    .icons {
+      margin: 1.5em 0 0 0;
+    }
+  }
+}
+
+@media (min-width: 411px) {
+  @media (min-height: 731px) {
+    .ContactContainer {
+      margin: 2.75em auto;
+    }
+
+    .info:focus {
+      transform: translateX(-9.9%);
+    }
+
+    #name:focus + label {
+      transform: translateX(302%);
+    }
+    
+    #email:focus + label {
+      transform: translateX(318%);
+    }
+    
+    #message:focus + label {
+      transform: translateX(187%);
+    }
+  }
+}
+
+@media (min-width: 411px) {
+  @media (min-height: 823px) {
+    .ContactContainer {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 414px) {
+  @media (min-height: 736px) {
+    #email:focus + label {
+      transform: translateX(322%);
+    }
+
+    #message:focus + label {
+      transform: translateX(190%);
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .ContactContainer {
+    margin: 2.5em auto;
+    width: 85vw;
+  }
+
+  .info:focus {
+    transform: translateX(-10%);
+  }
+
+  #name:focus + label {
+    height: 1.6em;
+    transform: translateX(435%);
+  }
+  
+  #email:focus + label {
+    height: 1.6em;
+    transform: translateX(458%);
+  }
+  
+  #message:focus + label {
+    transform: translateX(280%);
+  }
+}
+
+@media (min-width: 768px) {
+  .ContactContainer {
+    top: 10em;
+  }
+
+  .info {
+    height: 2.6em;
+  }
+
+  .info:focus {
+    transform: translateX(-7%);
+  }
+
+  #name:focus + label {
+    height: 1.25em;
+    padding: 1em 0.5em 1em 0.5em;
+    transform: translateX(625%);
+  }
+  
+  #email:focus + label {
+    height: 1.25em;
+    padding: 1em 0.5em 1em 0.5em;
+    transform: translateX(655%);
+  }
+  
+  #message:focus + label {
+    transform: translateX(415%);
+  }
+
+  .icons {
+    margin: 3em 0 0 0;
+  }
+  
+  .icon {
+    font-size: clamp(1.5em, 4vw, 2em);
+  }
+}
+
+@media (min-width: 1024px) {
+  @media (min-height: 600px) {
+    .ContactContainer {
+      height: 75vh;
+      margin: 0 auto;
+      top: 0.75em;
+    }
+  
+    .info:focus {
+      transform: translateX(-8%);
+    }
+  
+    #name:focus + label {
+      transform: translateX(625%);
+    }
+    
+    #email:focus + label {
+      transform: translateX(657%);
+    }
+    
+    #message:focus + label {
+      transform: translateX(422%);
+    }
+
+    .icons {
+      margin: 1em 0 0 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @media (min-height: 1366px) {
+    .ContactContainer {
+      height: 40vh;
+      margin: 0 auto;
+      top: 7.25em;
+      width: 85vw;
+    }
+  
+    .info:focus {
+      transform: translateX(-8%);
+    }
+  
+    #name:focus + label {
+      transform: translateX(625%);
+    }
+    
+    #email:focus + label {
+      transform: translateX(657%);
+    }
+    
+    #message:focus + label {
+      transform: translateX(422%);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .ContactContainer {
+    margin: 0 auto;
+    top: 2.25em;
+    width: 85vw;
+  }
+  
+  .info:focus {
+    transform: translateX(-8%);
+  }
+  
+  #name:focus + label {
+    transform: translateX(625%);
+  }
+    
+  #email:focus + label {
+    transform: translateX(657%);
+  }
+    
+  #message:focus + label {
+    transform: translateX(422%);
+  }
+
+  .icons {
+    margin: 3em 0 0 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ContactContainer {
+    top: 1.5em;
+  }
+  
+  #name:focus + label {
+    height: 1.3em;
+  }
+
+  .icons {
+    margin: 2em 0 0 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ContactContainer {
+    top: 2.15em;
+  }
+  
+  #name:focus + label {
+    height: 1.25em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ContactContainer {
+    top: 2em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .ContactContainer {
+    top: 3em;
+  }
+
+  #name:focus + label {
+    height: 1.3em;
+  }
+
+  .icons {
+    margin: 3em 0 0 0;
+  }
+
+  .icon {
+    font-size: clamp(1.5em, 4vw, 2.5em);
+  }
 }
