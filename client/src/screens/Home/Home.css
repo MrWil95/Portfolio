@@ -273,6 +273,17 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .intro {
+    margin-bottom: 0em;
+    margin-top: 1em;
+  }
+
+  .link {
+    margin-bottom: 1em;
+  }
+}
+
 @media (min-width: 1600px) {
   .homerise {
     height: 3.4em;
