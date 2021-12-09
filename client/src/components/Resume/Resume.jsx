@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
-import AlexWResume from './AlexW-Resume.pdf'
+import AlexWilburResume from './Alex-Wilbur-Resume.pdf'
 
 export default function Resume(props) {
   const [numPages, setNumPages] = useState(null)
@@ -20,7 +20,7 @@ export default function Resume(props) {
       <div className='resumecontainer'>
         <FaTimes onClick={handleShow} className='close' />
         <Document
-        file={AlexWResume}
+        file={AlexWilburResume}
         onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber + 1} numPages={numPages} className='page'/>
